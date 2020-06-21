@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZ3-8F-och">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zSh-VW-Gir">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -3287,6 +3287,76 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHP-Lu-u7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="3256.8215892053977"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="CmS-Oq-ePe">
+            <objects>
+                <viewController id="zSh-VW-Gir" customClass="ViewController3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkg-fq-0Sv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Uc-NN-XqN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="5Sg-D6-l0i"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F70-rt-t49">
+                                    <size key="itemSize" width="371" height="235"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell3" id="rRC-WH-hFa">
+                                        <rect key="frame" x="0.0" y="-7.5" width="371" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="371" height="235"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-bB-Bz0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="235"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="gT5-bB-Bz0" firstAttribute="top" secondItem="rRC-WH-hFa" secondAttribute="top" id="P67-v4-N4q"/>
+                                            <constraint firstAttribute="trailing" secondItem="gT5-bB-Bz0" secondAttribute="trailing" id="P7q-FG-LQQ"/>
+                                            <constraint firstItem="gT5-bB-Bz0" firstAttribute="leading" secondItem="rRC-WH-hFa" secondAttribute="leading" id="Q4A-Xm-AKB"/>
+                                            <constraint firstAttribute="bottom" secondItem="gT5-bB-Bz0" secondAttribute="bottom" id="eHX-XM-F4G"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="zSh-VW-Gir" id="RZH-pW-odA"/>
+                                    <outlet property="delegate" destination="zSh-VW-Gir" id="FSp-r2-SNA"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gzM-gB-87M">
+                                <rect key="frame" x="20" y="178" width="335" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92685199870000001" green="0.63261466369999997" blue="0.55450285499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gzM-gB-87M" firstAttribute="leading" secondItem="bii-uw-iQZ" secondAttribute="leading" constant="20" id="9Xu-gY-QTx"/>
+                            <constraint firstItem="2Uc-NN-XqN" firstAttribute="top" secondItem="bii-uw-iQZ" secondAttribute="top" id="Guy-NW-KmR"/>
+                            <constraint firstItem="bii-uw-iQZ" firstAttribute="trailing" secondItem="gzM-gB-87M" secondAttribute="trailing" constant="20" id="MEq-Pg-auq"/>
+                            <constraint firstItem="2Uc-NN-XqN" firstAttribute="trailing" secondItem="bii-uw-iQZ" secondAttribute="trailing" id="RMa-OU-FqC"/>
+                            <constraint firstItem="2Uc-NN-XqN" firstAttribute="leading" secondItem="bii-uw-iQZ" secondAttribute="leading" id="rhy-RW-Rpr"/>
+                            <constraint firstItem="gzM-gB-87M" firstAttribute="bottom" secondItem="2Uc-NN-XqN" secondAttribute="bottom" constant="-5" id="v9z-lq-NJ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bii-uw-iQZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageView" destination="gzM-gB-87M" id="Bs1-Zn-tje"/>
+                        <outlet property="sliderCollectionView" destination="2Uc-NN-XqN" id="IXe-jw-V5S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfh-Lx-bbw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="3968"/>
         </scene>
     </scenes>
     <resources>
