@@ -1,21 +1,20 @@
 //
-//  MainTableViewController.swift
+//  MainViewController.swift
 //  ProjectforOldman
 //
-//  Created by Peem on 16/6/2563 BE.
+//  Created by Peem on 21/6/2563 BE.
 //  Copyright © 2563 Peem. All rights reserved.
 //
 
 import UIKit
 
-class MainTableViewController: UITableViewController {
+class MainViewController: UIViewController {
     
-    
-    @IBOutlet weak var backView: UIImageView!
-    @IBOutlet weak var nameLBL: UILabel!
+    @IBOutlet weak var imgHotel: UIImageView!
+    @IBOutlet weak var infoLBL: UILabel!
     @IBOutlet weak var priceLBL: UILabel!
     
-    
+    @IBOutlet weak var inputTextField: UITextField!
     
     @IBOutlet weak var tab01: UIView!
     @IBOutlet weak var tab02: UIView!
@@ -29,9 +28,9 @@ class MainTableViewController: UITableViewController {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     
-    @IBOutlet weak var img1: UIImageView!
+   /* @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
-    @IBOutlet weak var img3: UIImageView!
+    @IBOutlet weak var img3: UIImageView!*/
     
     @IBAction func stepper1(_ sender: UIStepper)
     {
@@ -46,9 +45,11 @@ class MainTableViewController: UITableViewController {
         label3.text = String(sender.value)
     }
     
-    @IBOutlet weak var inputTextField: UITextField!
-    
     private var datePicker: UIDatePicker?
+    
+    var image = UIImage()
+    var name = ""
+    var price = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +103,14 @@ class MainTableViewController: UITableViewController {
         inputTextField.layer.shadowOffset = CGSize(width: 3, height: 3)
         inputTextField.layer.shadowColor = UIColor.green.cgColor
         
+        /*img1.image = UIImage(named: "d2979ee4513bbabae7e98cc7b3d190d1e8b017b6")
+        img2.image = UIImage(named: "ROOMS-Superior-King_1920x10802-370x276")
+        img3.image = UIImage(named: "d2979ee4513bbabae7e98cc7b3d190d1e8b017b6")*/
+        
+        infoLBL.text = "\(name)"
+        imgHotel.image = image
+        priceLBL.text = "\(price)"
+        
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
         datePicker?.addTarget(self, action: #selector(dateChanged(datePicker:)), for: .valueChanged)
@@ -111,35 +120,21 @@ class MainTableViewController: UITableViewController {
         view.addGestureRecognizer(tapGesture)
         
         inputTextField.inputView = datePicker
+
         
-        img1.image = UIImage(named: "d2979ee4513bbabae7e98cc7b3d190d1e8b017b6")
-        img2.image = UIImage(named: "ROOMS-Superior-King_1920x10802-370x276")
-        img3.image = UIImage(named: "images")
     }
-    
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
     @objc func dateChanged(datePicker: UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
-        inputTextField.text = dateFormatter.string(from: datePicker.date)
-        view.endEditing(true)
-    }
-    // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MM/dd/yyyy"
+    inputTextField.text = dateFormatter.string(from: datePicker.date)
+    view.endEditing(true)
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-    
-    
-    
-    
+
+   
+
 }

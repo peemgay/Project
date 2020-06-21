@@ -9,67 +9,45 @@
 import UIKit
 
 class ViewController2: UIViewController {
-    @IBOutlet var table: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
-     var animalArray = [Animal]()
-    var currentAnimalArray = [Animal]()
-
+    var name = ["ช้างน้อย รีสอร์ท","Novotel Hua Hin Cha Am Beach","ทอแสง ซิตี้","โฆษะ","โรงแรม อโมรา ท่าแพ เชียงใหม่","มิราเคิล แกรนด์ คอนเวนชั่น","ไอบิส กรุงเทพ ริเวอร์ไซด์","โกลเด้นทิวลิป ซอฟเฟอรีน โฮเทล","เซ็นทารา พัทยา โฮเทล","ไมด้า เดอ ซี หัวหิน","โรงแรมโกลเด้น บีช ชะอำ","ธารามันตรา ชะอำ รีสอร์ท"]
+    var price = ["1800","1900","1400","1000","1200","1300","1500","1600","1700","1900","1300","1100","1200"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpAnimals()
 
         // Do any additional setup after loading the view.
     }
-    private func setUpAnimals() {
-        // CATS
-        animalArray.append(Animal(name: "ช้างน้อย รีสอร์ท", image:"ช้างน้อย"))
-        animalArray.append(Animal(name: "Novotel Hua Hin Cha Am Beach", image:"7"))
-        animalArray.append(Animal(name: "ทอแสง ซิตี้", image:"8"))
-        // DOGS
-        animalArray.append(Animal(name: "โฆษะ", image:"9"))
-        
-        
-        currentAnimalArray = animalArray
-    }
+    
+}
+
+extension ViewController2: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentAnimalArray.count
+        return name.count
+       // return price.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableCell else {
-            return UITableViewCell()
-        }
-        cell.foodnameOne.text = currentAnimalArray[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! TableCell
+        cell.nameLBL2.text = name[indexPath.row]
+        cell.price.text = price[indexPath.row]
+        cell.imgVIew2.image = UIImage(named: name[indexPath.row])
         
-        cell.imgView.image = UIImage(named:currentAnimalArray[indexPath.row].image)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "payment") as? MainViewController
+        vc?.image = UIImage(named: name[indexPath.row])!
+        vc?.name = name[indexPath.row]
+        vc?.price = price[indexPath.row]
+   self.navigationController?.pushViewController(vc!, animated: true)
     }
-    */
-
-}
-class Animal {
-    let name: String
-    let image: String
-  // let category: AnimalType
+   /* func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 80
+    }*/
     
-    init(name: String, image: String) {
-        self.name = name
-       // self.category = category
-        self.image = image
-    }
+    
 }
-
