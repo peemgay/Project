@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var imgHotel: UIImageView!
     @IBOutlet weak var infoLBL: UILabel!
     @IBOutlet weak var priceLBL: UILabel!
+    @IBOutlet weak var locationLBL: UILabel!
     
     @IBOutlet weak var inputTextField: UITextField!
     
@@ -50,6 +51,8 @@ class MainViewController: UIViewController {
     var image = UIImage()
     var name = ""
     var price = ""
+    var location = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,6 +113,7 @@ class MainViewController: UIViewController {
         infoLBL.text = "\(name)"
         imgHotel.image = image
         priceLBL.text = "\(price)"
+        locationLBL.text = "\(location)"
         
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date

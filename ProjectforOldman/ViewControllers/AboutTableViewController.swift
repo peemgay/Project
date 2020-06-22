@@ -10,12 +10,21 @@ import UIKit
 
 class AboutTableViewController: UITableViewController {
 
+    
+    @IBOutlet weak var aboutLBL: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var profile: UIImageView!
     @IBOutlet weak var backView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profile.image = UIImage(named: "โปรไฟล์-วงกลม")
+        profile.image = UIImage(named: userProfile[0].image)
+        name.text = "\(userProfile[0].name)"
+        email.text = "\(users[0].email)"
+        aboutLBL.text = "\(about[0].about)"
+        
+        
         backView.image = UIImage(named: "ดาวน์โหลด2")
        
     }
@@ -39,7 +48,7 @@ class AboutTableViewController: UITableViewController {
     }
     
     @IBAction func favoritesClock(_ sender: Any) {
-    let  vc = storyboard?.instantiateViewController(identifier: "tabbar") as! TabbarController
+    let  vc = storyboard?.instantiateViewController(identifier: "profile") as! ProfileTableViewController
     vc.modalPresentationStyle = .fullScreen
     present(vc,animated: true)
     }
@@ -55,5 +64,7 @@ class AboutTableViewController: UITableViewController {
               vc.modalPresentationStyle = .fullScreen
               present(vc,animated: true)
               }
+    
+    
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zSh-VW-Gir">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZ3-8F-och">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -59,31 +59,10 @@ SusieSays - Instagram</string>
                                     <rect key="frame" x="29" y="516.5" width="22.5" height="20"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="22.5" id="RaQ-Cm-CYV"/>
-                                        <constraint firstAttribute="height" constant="23.5" id="Xe7-An-WHo"/>
+                                        <constraint firstAttribute="width" constant="22.5" id="lpU-n9-tnX"/>
+                                        <constraint firstAttribute="height" constant="23.5" id="nfR-Db-A5R"/>
                                     </constraints>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-ID-Dof">
-                                    <rect key="frame" x="125" y="232" width="123" height="59"/>
-                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="123" id="vGx-9n-nAw"/>
-                                        <constraint firstAttribute="height" constant="59" id="xY2-YY-nPt"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="FOLLOW">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="border">
-                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
-                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsm-iU-Zxm">
                                     <rect key="frame" x="36" y="380" width="0.0" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,18 +117,6 @@ SusieSays - Instagram</string>
                                         </button>
                                     </subviews>
                                 </stackView>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ฉันชอบบรรยากาศดีๆ ร่มลื่นชอบว่ายน้ำในเวลาว่าง ๆ" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-Bb-iIR">
-                                    <rect key="frame" x="23" y="380" width="328" height="34"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-Qt-9Q6">
-                                    <rect key="frame" x="31" y="447" width="19" height="19"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="19" id="eBm-FI-WeS"/>
-                                        <constraint firstAttribute="width" constant="19" id="uuI-5O-isj"/>
-                                    </constraints>
-                                </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="susiewright@susiesaysblog.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-2n-Apr">
                                     <rect key="frame" x="69" y="518" width="248.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -180,45 +147,73 @@ SusieSays - Instagram</string>
                                         <action selector="settingClick:" destination="6Xm-fI-x2H" eventType="touchUpInside" id="uIs-az-ofQ"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-dZ-gES">
+                                    <rect key="frame" x="36" y="388" width="315" height="26"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="26" id="7wb-dM-AD1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-Qt-9Q6">
+                                    <rect key="frame" x="29" y="445" width="22" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="2OJ-G4-uSa"/>
+                                        <constraint firstAttribute="width" constant="22" id="bg7-XH-uXq"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eZ-LP-h3n">
+                                    <rect key="frame" x="126" y="218" width="123" height="59"/>
+                                    <color key="backgroundColor" red="0.096682004629999999" green="0.80516380070000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="59" id="RWD-l7-0jr"/>
+                                        <constraint firstAttribute="width" constant="123" id="fSI-Oe-LuJ"/>
+                                    </constraints>
+                                    <state key="normal" title="Follow">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
+                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="4eZ-LP-h3n" secondAttribute="bottom" constant="35" id="05j-Bj-0NK"/>
                                 <constraint firstItem="ktP-1o-ASp" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="15" id="1lU-Pu-hSE"/>
+                                <constraint firstItem="4eZ-LP-h3n" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="126" id="3iJ-an-aRY"/>
                                 <constraint firstItem="iRn-or-etd" firstAttribute="trailing" secondItem="feo-bx-vk4" secondAttribute="trailing" id="4hN-8z-Zeq"/>
+                                <constraint firstItem="OX3-NY-njE" firstAttribute="top" secondItem="nZc-dZ-gES" secondAttribute="bottom" constant="8" id="8Gp-Z9-aBc"/>
                                 <constraint firstItem="KF2-bv-3bh" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="15" id="9WN-kZ-Ghz"/>
+                                <constraint firstItem="VQi-WJ-OHi" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="29" id="CEg-9H-TMR"/>
                                 <constraint firstItem="GgC-nJ-6RW" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="70" id="D6i-Lm-utG"/>
+                                <constraint firstItem="feo-bx-vk4" firstAttribute="bottom" secondItem="VQi-WJ-OHi" secondAttribute="bottom" constant="381.5" id="DLT-gK-WAH"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="fBO-Fe-DVD" secondAttribute="trailing" constant="71" id="Dl7-hA-6ec"/>
                                 <constraint firstItem="GgC-nJ-6RW" firstAttribute="top" secondItem="sg5-KT-1xp" secondAttribute="bottom" constant="44" id="E9v-CK-Bjm"/>
+                                <constraint firstItem="4eZ-LP-h3n" firstAttribute="top" secondItem="GgC-nJ-6RW" secondAttribute="bottom" constant="8" id="Ff1-fR-SYk"/>
                                 <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="ktP-1o-ASp" secondAttribute="bottom" constant="275" id="Gz3-vO-WFN"/>
-                                <constraint firstItem="TqJ-Bb-iIR" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="23" id="HBt-jr-aQU"/>
+                                <constraint firstItem="zeo-Qt-9Q6" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="29" id="ITv-tr-2Ti"/>
                                 <constraint firstItem="iRn-or-etd" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" id="IjR-ov-GGX"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="ktP-1o-ASp" secondAttribute="trailing" constant="24" id="J89-EK-dwb"/>
-                                <constraint firstItem="OX3-NY-njE" firstAttribute="leading" secondItem="zeo-Qt-9Q6" secondAttribute="trailing" constant="19" id="MND-fz-0st"/>
-                                <constraint firstItem="VQi-WJ-OHi" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="29" id="Nl8-jm-Tx6"/>
-                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="Pjk-ID-Dof" secondAttribute="trailing" constant="127" id="OBp-Dd-s2q"/>
+                                <constraint firstItem="zeo-Qt-9Q6" firstAttribute="top" secondItem="nZc-dZ-gES" secondAttribute="bottom" constant="31" id="MM4-vT-Nfh"/>
+                                <constraint firstItem="nZc-dZ-gES" firstAttribute="top" secondItem="iRn-or-etd" secondAttribute="bottom" constant="31" id="NCg-Yb-5PP"/>
+                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="nZc-dZ-gES" secondAttribute="trailing" constant="24" id="PDo-j3-ywo"/>
+                                <constraint firstItem="OX3-NY-njE" firstAttribute="leading" secondItem="zeo-Qt-9Q6" secondAttribute="trailing" constant="18" id="PH1-zn-GDp"/>
                                 <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="bd6-KE-tln" secondAttribute="bottom" id="Pmz-vZ-csR"/>
-                                <constraint firstItem="Pjk-ID-Dof" firstAttribute="top" secondItem="GgC-nJ-6RW" secondAttribute="bottom" constant="22" id="Rci-nC-qW4"/>
                                 <constraint firstItem="sg5-KT-1xp" firstAttribute="centerX" secondItem="feo-bx-vk4" secondAttribute="centerX" id="SoV-5i-zvX"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="OX3-NY-njE" secondAttribute="trailing" constant="105" id="V9l-nc-Odz"/>
+                                <constraint firstItem="VQi-WJ-OHi" firstAttribute="top" secondItem="zeo-Qt-9Q6" secondAttribute="bottom" constant="51" id="VVx-fh-fnQ"/>
                                 <constraint firstItem="bd6-KE-tln" firstAttribute="leading" secondItem="MaQ-rN-ZuL" secondAttribute="leading" constant="-114" id="XU6-p4-L3x"/>
                                 <constraint firstItem="fBO-Fe-DVD" firstAttribute="top" secondItem="sg5-KT-1xp" secondAttribute="bottom" constant="21" id="Y8z-VG-6RO"/>
-                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="TqJ-Bb-iIR" secondAttribute="trailing" constant="24" id="YVq-g1-vhu"/>
-                                <constraint firstItem="OX3-NY-njE" firstAttribute="top" secondItem="TqJ-Bb-iIR" secondAttribute="bottom" constant="8" id="c1z-k7-9Ap"/>
+                                <constraint firstItem="U7y-2n-Apr" firstAttribute="leading" secondItem="VQi-WJ-OHi" secondAttribute="trailing" constant="17.5" id="cGi-65-Axz"/>
                                 <constraint firstItem="U7y-2n-Apr" firstAttribute="top" secondItem="OX3-NY-njE" secondAttribute="bottom" constant="15" id="dDk-mr-8xt"/>
                                 <constraint firstItem="sg5-KT-1xp" firstAttribute="leading" secondItem="KF2-bv-3bh" secondAttribute="trailing" constant="68.5" id="eU7-cW-E3j"/>
-                                <constraint firstItem="zeo-Qt-9Q6" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="31" id="eyL-XA-DKU"/>
-                                <constraint firstItem="TqJ-Bb-iIR" firstAttribute="top" secondItem="iRn-or-etd" secondAttribute="bottom" constant="23" id="fdg-Ol-iBy"/>
                                 <constraint firstItem="fBO-Fe-DVD" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="70" id="joB-U5-xFC"/>
-                                <constraint firstItem="VQi-WJ-OHi" firstAttribute="top" secondItem="zeo-Qt-9Q6" secondAttribute="bottom" constant="49" id="k5L-m3-uaL"/>
                                 <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="KF2-bv-3bh" secondAttribute="bottom" constant="275" id="mJF-ZC-ozA"/>
-                                <constraint firstItem="Pjk-ID-Dof" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="125" id="oIM-Hr-BmX"/>
+                                <constraint firstItem="nZc-dZ-gES" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="36" id="pKA-Pq-PUC"/>
                                 <constraint firstAttribute="trailing" secondItem="bd6-KE-tln" secondAttribute="trailing" constant="-157" id="qO7-JB-nZJ"/>
                                 <constraint firstItem="ktP-1o-ASp" firstAttribute="leading" secondItem="sg5-KT-1xp" secondAttribute="trailing" constant="59.5" id="rCD-zw-TAY"/>
-                                <constraint firstItem="U7y-2n-Apr" firstAttribute="leading" secondItem="VQi-WJ-OHi" secondAttribute="trailing" constant="17.5" id="tDM-dh-9eT"/>
                                 <constraint firstItem="sg5-KT-1xp" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="24" id="taI-aj-IX8"/>
-                                <constraint firstItem="U7y-2n-Apr" firstAttribute="leading" secondItem="VQi-WJ-OHi" secondAttribute="trailing" constant="17.5" id="uup-nw-eyZ"/>
+                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="4eZ-LP-h3n" secondAttribute="trailing" constant="126" id="tfk-gT-n3m"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="U7y-2n-Apr" secondAttribute="trailing" constant="57.5" id="wk0-Iz-4V5"/>
-                                <constraint firstItem="zeo-Qt-9Q6" firstAttribute="top" secondItem="TqJ-Bb-iIR" secondAttribute="bottom" constant="33" id="x63-Yq-mPz"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="GgC-nJ-6RW" secondAttribute="trailing" constant="71" id="xH8-S3-Ciy"/>
                                 <constraint firstItem="bd6-KE-tln" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" id="zgO-7H-brH"/>
                                 <constraint firstItem="KF2-bv-3bh" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="18" id="zpg-eK-frq"/>
@@ -231,7 +226,10 @@ SusieSays - Instagram</string>
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="aboutLBL" destination="nZc-dZ-gES" id="alx-KK-org"/>
                         <outlet property="backView" destination="bd6-KE-tln" id="ObR-J9-0VD"/>
+                        <outlet property="email" destination="U7y-2n-Apr" id="h1a-8y-DNg"/>
+                        <outlet property="name" destination="fBO-Fe-DVD" id="Ape-QG-y2f"/>
                         <outlet property="profile" destination="sg5-KT-1xp" id="bod-bc-VQg"/>
                     </connections>
                 </tableViewController>
@@ -1176,7 +1174,7 @@ SusieSays - Instagram</string>
                                         <constraint firstAttribute="width" constant="166" id="g0e-Oi-XhN"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panuwat Fhamongkolchai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFi-Lv-FZn">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFi-Lv-FZn">
                                     <rect key="frame" x="70" y="175" width="234" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="YkN-ot-dGh"/>
@@ -1196,27 +1194,6 @@ SusieSays - Instagram</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJT-zR-rph">
-                                    <rect key="frame" x="125" y="232" width="123" height="59"/>
-                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="123" id="74h-2H-pRr"/>
-                                        <constraint firstAttribute="height" constant="59" id="aEu-I5-yVm"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="FOLLOW">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="border">
-                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
-                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3k-Gw-JIo">
                                     <rect key="frame" x="0.0" y="312" width="375" height="45"/>
                                     <subviews>
@@ -1329,21 +1306,33 @@ SusieSays - Instagram</string>
                                         <segue destination="2XL-13-o3v" kind="presentation" id="Blj-dm-6Uq"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzO-dL-D6H">
+                                    <rect key="frame" x="128" y="225" width="123" height="59"/>
+                                    <color key="backgroundColor" red="0.096682004629999999" green="0.80516380070000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="123" id="4lo-GJ-SxG"/>
+                                        <constraint firstAttribute="height" constant="59" id="alz-TR-bHE"/>
+                                    </constraints>
+                                    <state key="normal" title="Follow">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstItem="wft-Kz-Z7E" firstAttribute="trailing" secondItem="IJT-zR-rph" secondAttribute="trailing" constant="127" id="0ng-0V-unb"/>
-                                <constraint firstItem="IJT-zR-rph" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" constant="125" id="2ds-5k-Yc5"/>
                                 <constraint firstItem="L3Q-xe-1D7" firstAttribute="top" secondItem="wft-Kz-Z7E" secondAttribute="top" constant="24" id="7n1-ba-egK"/>
                                 <constraint firstItem="n3k-Gw-JIo" firstAttribute="top" secondItem="iqd-rx-S8P" secondAttribute="bottom" id="80S-ic-clC"/>
+                                <constraint firstItem="wft-Kz-Z7E" firstAttribute="trailing" secondItem="JzO-dL-D6H" secondAttribute="trailing" constant="124" id="B3P-Pu-eoZ"/>
                                 <constraint firstItem="n3k-Gw-JIo" firstAttribute="trailing" secondItem="wft-Kz-Z7E" secondAttribute="trailing" id="GUd-lp-4Vd"/>
                                 <constraint firstItem="iqd-rx-S8P" firstAttribute="top" secondItem="wft-Kz-Z7E" secondAttribute="top" id="IR2-Xf-gZC"/>
+                                <constraint firstItem="n3k-Gw-JIo" firstAttribute="top" secondItem="JzO-dL-D6H" secondAttribute="bottom" constant="28" id="IVB-b7-ygd"/>
                                 <constraint firstItem="wft-Kz-Z7E" firstAttribute="trailing" secondItem="riH-Rt-dys" secondAttribute="trailing" constant="8" id="ItF-JA-yb7"/>
                                 <constraint firstItem="wft-Kz-Z7E" firstAttribute="trailing" secondItem="yFi-Lv-FZn" secondAttribute="trailing" constant="71" id="JTw-ke-ooW"/>
                                 <constraint firstItem="ytU-A6-Yez" firstAttribute="top" secondItem="wft-Kz-Z7E" secondAttribute="top" constant="8" id="Ksf-ag-lTF"/>
                                 <constraint firstAttribute="trailing" secondItem="iqd-rx-S8P" secondAttribute="trailing" constant="-157" id="PyQ-GK-Fba"/>
                                 <constraint firstItem="I0h-Ah-H08" firstAttribute="top" secondItem="wft-Kz-Z7E" secondAttribute="top" constant="8" id="SBk-XY-X0d"/>
                                 <constraint firstItem="L3Q-xe-1D7" firstAttribute="leading" secondItem="ytU-A6-Yez" secondAttribute="trailing" constant="78.5" id="U8T-hF-73U"/>
+                                <constraint firstItem="JzO-dL-D6H" firstAttribute="top" secondItem="h2W-zb-age" secondAttribute="bottom" constant="8" id="UgK-za-Jck"/>
                                 <constraint firstItem="n3k-Gw-JIo" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" id="Vex-YG-1Iy"/>
                                 <constraint firstItem="h2W-zb-age" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" constant="69" id="W5u-MG-kfu"/>
                                 <constraint firstItem="n3k-Gw-JIo" firstAttribute="top" secondItem="ytU-A6-Yez" secondAttribute="bottom" constant="282" id="YSS-ZI-Z7p"/>
@@ -1355,7 +1344,7 @@ SusieSays - Instagram</string>
                                 <constraint firstItem="riH-Rt-dys" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" constant="11" id="htI-zT-Kaj"/>
                                 <constraint firstItem="riH-Rt-dys" firstAttribute="top" secondItem="n3k-Gw-JIo" secondAttribute="bottom" constant="8" id="kEE-Yt-1Vl"/>
                                 <constraint firstItem="ytU-A6-Yez" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" constant="8" id="kMg-bD-VWW"/>
-                                <constraint firstItem="IJT-zR-rph" firstAttribute="top" secondItem="h2W-zb-age" secondAttribute="bottom" constant="15" id="pF9-ob-3Po"/>
+                                <constraint firstItem="JzO-dL-D6H" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" constant="128" id="nRl-rh-f1f"/>
                                 <constraint firstItem="yFi-Lv-FZn" firstAttribute="top" secondItem="L3Q-xe-1D7" secondAttribute="bottom" constant="21" id="smn-cA-Kow"/>
                                 <constraint firstItem="L3Q-xe-1D7" firstAttribute="centerX" secondItem="wft-Kz-Z7E" secondAttribute="centerX" id="vtx-uo-pH4"/>
                                 <constraint firstItem="yFi-Lv-FZn" firstAttribute="leading" secondItem="wft-Kz-Z7E" secondAttribute="leading" constant="70" id="wJt-gj-8NP"/>
@@ -1374,6 +1363,7 @@ SusieSays - Instagram</string>
                         <outlet property="img2" destination="MoX-j4-qiC" id="toA-hR-jNV"/>
                         <outlet property="img3" destination="GOg-bG-1f0" id="doT-Mr-blL"/>
                         <outlet property="img4" destination="TiL-Ml-D3m" id="Yrq-cf-reR"/>
+                        <outlet property="name" destination="yFi-Lv-FZn" id="aeY-S9-XCS"/>
                         <outlet property="profile" destination="L3Q-xe-1D7" id="eeX-rx-OhJ"/>
                     </connections>
                 </tableViewController>
@@ -1986,16 +1976,29 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bN-xf-d6D">
+                                        <rect key="frame" x="136" y="160" width="215" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Uae-QK-Gcl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="0bN-xf-d6D" firstAttribute="leading" secondItem="Ufd-Gc-eq5" secondAttribute="trailing" constant="18" id="0Ei-5T-6iI"/>
                                     <constraint firstItem="lny-qb-1Sc" firstAttribute="leading" secondItem="48d-A1-3ov" secondAttribute="leading" constant="8" id="2M9-PU-YVs"/>
                                     <constraint firstItem="Ufd-Gc-eq5" firstAttribute="leading" secondItem="48d-A1-3ov" secondAttribute="leading" constant="8" id="7Wu-Cw-qxu"/>
                                     <constraint firstItem="Ufd-Gc-eq5" firstAttribute="top" secondItem="lny-qb-1Sc" secondAttribute="bottom" constant="8.5" id="Qoj-7h-zhF"/>
                                     <constraint firstAttribute="height" constant="186" id="Zbb-5b-s1l"/>
                                     <constraint firstItem="lny-qb-1Sc" firstAttribute="top" secondItem="48d-A1-3ov" secondAttribute="top" constant="129" id="c3T-55-dL6"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bN-xf-d6D" secondAttribute="trailing" constant="24" id="cK1-7P-bYD"/>
                                     <constraint firstAttribute="width" constant="375" id="dpj-aB-DNq"/>
                                     <constraint firstAttribute="trailing" secondItem="Ufd-Gc-eq5" secondAttribute="trailing" constant="257" id="feK-gD-wPF"/>
+                                    <constraint firstAttribute="bottom" secondItem="0bN-xf-d6D" secondAttribute="bottom" constant="10" id="i5o-uI-eP7"/>
+                                    <constraint firstItem="0bN-xf-d6D" firstAttribute="top" secondItem="lny-qb-1Sc" secondAttribute="bottom" constant="10.5" id="lfQ-F0-J8L"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP8-X7-imO">
@@ -2343,6 +2346,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <outlet property="label1" destination="NHT-nH-8IV" id="hKa-Gk-MTQ"/>
                         <outlet property="label2" destination="IhV-xZ-3uw" id="DnJ-qF-xrr"/>
                         <outlet property="label3" destination="Mjp-MK-bkk" id="TNl-Ha-JL4"/>
+                        <outlet property="locationLBL" destination="0bN-xf-d6D" id="gtq-dL-dnH"/>
                         <outlet property="priceLBL" destination="T2l-Ii-hSz" id="vdB-4z-DRB"/>
                         <outlet property="tab01" destination="ZHB-Ad-eZ2" id="NDP-XS-CoJ"/>
                         <outlet property="tab02" destination="gx9-Vi-MoO" id="mIk-Jc-a6W"/>
@@ -2487,7 +2491,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                     <connections>
                         <segue destination="fhg-ss-TJJ" kind="relationship" relationship="viewControllers" id="9eE-lO-5rI"/>
                         <segue destination="Yl8-gb-o5F" kind="relationship" relationship="viewControllers" id="ITN-bq-SVj"/>
-                        <segue destination="caj-uz-xaF" kind="relationship" relationship="viewControllers" id="AKe-ek-w53"/>
                         <segue destination="tCl-3k-n6S" kind="relationship" relationship="viewControllers" id="L90-tl-2eC"/>
                     </connections>
                 </tabBarController>
@@ -2538,22 +2541,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyp-zb-EJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-676" y="2770"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="AQj-Mm-LOE">
-            <objects>
-                <viewController id="xuL-bj-Xx1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wYO-Ga-vp7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="KLz-X8-bLO"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="05g-ex-yUy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yeG-Vd-hEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2604" y="3252"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PpZ-i7-efI">
@@ -2823,27 +2810,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtH-uW-IVK">
-                                    <rect key="frame" x="125" y="232" width="123" height="59"/>
-                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="123" id="DAb-CM-hL1"/>
-                                        <constraint firstAttribute="height" constant="59" id="PTX-5a-1Qp"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="FOLLOW">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="border">
-                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
-                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx3-1y-cgd">
                                     <rect key="frame" x="0.0" y="312" width="375" height="45"/>
                                     <subviews>
@@ -2948,12 +2914,23 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <constraint firstItem="1Pp-WI-sGd" firstAttribute="width" secondItem="RzJ-yp-LsI" secondAttribute="width" id="ZqY-St-Fa4"/>
                                     </constraints>
                                 </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMr-Qs-QRe">
+                                    <rect key="frame" x="125" y="225" width="123" height="59"/>
+                                    <color key="backgroundColor" red="0.096682004629999999" green="0.80516380070000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="123" id="VUy-nU-q5w"/>
+                                        <constraint firstAttribute="height" constant="59" id="elj-HA-7LW"/>
+                                    </constraints>
+                                    <state key="normal" title="Follow">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="vhK-NJ-E4K" firstAttribute="top" secondItem="c9Z-GZ-kSY" secondAttribute="bottom" constant="21" id="02b-U1-wow"/>
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="4U8-hN-wBW" secondAttribute="trailing" constant="8" id="0SS-Eh-gBV"/>
-                                <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="PtH-uW-IVK" secondAttribute="trailing" constant="127" id="5ko-Jg-s7s"/>
+                                <constraint firstItem="gMr-Qs-QRe" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="125" id="6JY-x2-E9b"/>
                                 <constraint firstItem="Lx3-1y-cgd" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" id="6iP-dF-i2f"/>
                                 <constraint firstItem="wbO-bY-nTm" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="69" id="6in-1M-ZuX"/>
                                 <constraint firstItem="zCM-Fo-dsF" firstAttribute="top" secondItem="uzX-po-6Ov" secondAttribute="top" constant="8" id="Aag-fV-OmJ"/>
@@ -2962,11 +2939,12 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="zCM-Fo-dsF" secondAttribute="trailing" constant="8" id="Fc5-YX-PYT"/>
                                 <constraint firstItem="Rhd-Uc-wNh" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="8" id="Fdp-j8-YCv"/>
                                 <constraint firstItem="vhK-NJ-E4K" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="70" id="FqM-Zn-t07"/>
+                                <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="gMr-Qs-QRe" secondAttribute="trailing" constant="127" id="JPL-xl-VHd"/>
                                 <constraint firstItem="wbO-bY-nTm" firstAttribute="top" secondItem="c9Z-GZ-kSY" secondAttribute="bottom" constant="39" id="LeI-Je-B1e"/>
+                                <constraint firstItem="gMr-Qs-QRe" firstAttribute="top" secondItem="wbO-bY-nTm" secondAttribute="bottom" constant="8" id="Ml9-5K-9eC"/>
                                 <constraint firstItem="Rhd-Uc-wNh" firstAttribute="top" secondItem="4U8-hN-wBW" secondAttribute="bottom" constant="8" id="NuH-Df-gCc"/>
+                                <constraint firstItem="Lx3-1y-cgd" firstAttribute="top" secondItem="gMr-Qs-QRe" secondAttribute="bottom" constant="28" id="XRC-Es-dPG"/>
                                 <constraint firstItem="4U8-hN-wBW" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="8" id="Yti-BL-opi"/>
-                                <constraint firstItem="PtH-uW-IVK" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="125" id="Zyw-7e-lkq"/>
-                                <constraint firstItem="PtH-uW-IVK" firstAttribute="top" secondItem="wbO-bY-nTm" secondAttribute="bottom" constant="15" id="a7U-a8-gpN"/>
                                 <constraint firstItem="zCM-Fo-dsF" firstAttribute="leading" secondItem="c9Z-GZ-kSY" secondAttribute="trailing" constant="75.5" id="bQx-xh-EHI"/>
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="wbO-bY-nTm" secondAttribute="trailing" constant="72" id="fJ8-C4-3pt"/>
                                 <constraint firstItem="4U8-hN-wBW" firstAttribute="top" secondItem="Lx3-1y-cgd" secondAttribute="bottom" constant="8" id="gFX-Yx-qpa"/>
@@ -2998,12 +2976,13 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <outlet property="img2" destination="uwD-h6-bRg" id="PLV-8F-zaN"/>
                         <outlet property="img3" destination="RzJ-yp-LsI" id="R0o-Mk-djf"/>
                         <outlet property="img4" destination="1Pp-WI-sGd" id="aBa-u7-VwH"/>
+                        <outlet property="nameProfile" destination="vhK-NJ-E4K" id="n33-84-0Sh"/>
                         <outlet property="profile1" destination="c9Z-GZ-kSY" id="L7c-9B-MRa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2a-my-laL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358" y="3257"/>
+            <point key="canvasLocation" x="2604" y="3257"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2ud-rE-Q8G">
@@ -3155,23 +3134,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
             </objects>
             <point key="canvasLocation" x="1790" y="2499"/>
         </scene>
-        <!--Trips-->
-        <scene sceneID="Nlt-Is-fOQ">
-            <objects>
-                <navigationController id="caj-uz-xaF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trips" image="heart.fill" catalog="system" id="bC7-Y9-i4s"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m23-cr-Vje">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xuL-bj-Xx1" kind="relationship" relationship="rootViewController" id="wbT-hw-A7a"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FJ5-f6-d0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2604" y="2499"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="MkJ-X7-ilO">
             <objects>
@@ -3187,7 +3149,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQ5-zE-b6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358" y="2499"/>
+            <point key="canvasLocation" x="2604" y="2499"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="PdT-zF-7Pf">
@@ -3369,7 +3331,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="glass-and-bottle-of-wine" width="12.5" height="16.5"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="images1" width="275" height="183"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
@@ -3380,8 +3341,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="star.lefthalf.fill" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
-        <image name="wifi" width="15" height="10"/>
         <image name="wifi" catalog="system" width="128" height="92"/>
+        <image name="wifi" width="15" height="10"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="ช้างน้อย" width="275" height="183"/>
         <image name="ดาวน์โหลด2" width="299" height="168"/>

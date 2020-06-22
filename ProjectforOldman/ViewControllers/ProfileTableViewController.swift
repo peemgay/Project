@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+//โปรไฟล์-วงกลม
 class ProfileTableViewController: UITableViewController {
     @IBOutlet weak var profile1: UIImageView!
+    @IBOutlet weak var nameProfile: UILabel!
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img3: UIImageView!
@@ -20,10 +21,14 @@ class ProfileTableViewController: UITableViewController {
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var backview: UIImageView!
     
+    //var userProfiles: [UserProfile] = [userProfile(im)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profile1.image = UIImage(named: "โปรไฟล์-วงกลม")
+        profile1.image = UIImage(named: userProfile[0].image)
+        nameProfile.text = "\(userProfile[0].name)"
+        
         
         img1.image = UIImage(named: "3")
         img2.image = UIImage(named: "4")
@@ -78,9 +83,9 @@ class ProfileTableViewController: UITableViewController {
     }
     
     @IBAction func settingClick(_ sender: Any) {
-    let  vc = storyboard?.instantiateViewController(identifier: "setting") as! SettingTableViewController
-    vc.modalPresentationStyle = .fullScreen
-    present(vc,animated: true)
+        let  vc = storyboard?.instantiateViewController(identifier: "setting") as! SettingTableViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc,animated: true)
     }
     
     

@@ -22,3 +22,23 @@ class User {
     }
     
 }
+
+class UserProfile {
+    var image: String
+    var name: String
+     
+    init(image: String,
+         name: String) {
+        self.image = image
+        self.name = name
+    }
+}
+
+class About {
+    var about: String
+    
+    init(about: String) {
+        self.about = about
+    }
+    
+}

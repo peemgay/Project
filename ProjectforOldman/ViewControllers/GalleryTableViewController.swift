@@ -9,6 +9,7 @@
 import UIKit
 
 class GalleryTableViewController: UITableViewController {
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img3: UIImageView!
@@ -18,11 +19,13 @@ class GalleryTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.text = "\(users[0].name)"
+        
         img1.image = UIImage(named: "download")
         img2.image = UIImage(named: "download-1")
         img3.image = UIImage(named: "download-2")
         img4.image = UIImage(named: "images-1")
-        profile.image = UIImage(named: "โปรไฟล์-วงกลม")
+        profile.image = UIImage(named: userProfile[0].image)
         backview.image = UIImage(named: "ดาวน์โหลด2")
         
     }
