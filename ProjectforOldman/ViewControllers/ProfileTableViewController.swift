@@ -27,7 +27,7 @@ class ProfileTableViewController: UITableViewController {
         super.viewDidLoad()
         
         profile1.image = UIImage(named: userProfile[0].image)
-        nameProfile.text = "\(userProfile[0].name)"
+        nameProfile.text = "\(users[0].name)"
         
         
         img1.image = UIImage(named: "3")
@@ -67,6 +67,8 @@ class ProfileTableViewController: UITableViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc,animated: true)
         
+        performSegue(withIdentifier: "test", sender: nil)
+        
         changeButtonColor(multiColor: #colorLiteral(red: 0.4119389951, green: 0.8247622848, blue: 0.9853010774, alpha: 1), multiTxtColor: .white)
     }
     
@@ -84,6 +86,13 @@ class ProfileTableViewController: UITableViewController {
     
     @IBAction func settingClick(_ sender: Any) {
         let  vc = storyboard?.instantiateViewController(identifier: "setting") as! SettingTableViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc,animated: true)
+    }
+    
+    
+    @IBAction func xMark(_ sender: Any) {
+        let  vc = storyboard?.instantiateViewController(identifier: "tabbar") as! TabbarController
         vc.modalPresentationStyle = .fullScreen
         present(vc,animated: true)
     }

@@ -20,7 +20,7 @@ class AboutTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         profile.image = UIImage(named: userProfile[0].image)
-        name.text = "\(userProfile[0].name)"
+        name.text = "\(users[0].name)"
         email.text = "\(users[0].email)"
         aboutLBL.text = "\(about[0].about)"
         

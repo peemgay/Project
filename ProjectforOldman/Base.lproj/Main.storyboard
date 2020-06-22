@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About Table View Controller-->
+        <!--Profile-->
         <scene sceneID="1tl-lO-fzp">
             <objects>
                 <tableViewController storyboardIdentifier="about" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="6Xm-fI-x2H" customClass="AboutTableViewController" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,7 @@ SusieSays - Instagram</string>
                                         <action selector="settingClick:" destination="6Xm-fI-x2H" eventType="touchUpInside" id="uIs-az-ofQ"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-dZ-gES">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-dZ-gES">
                                     <rect key="frame" x="36" y="388" width="315" height="26"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="26" id="7wb-dM-AD1"/>
@@ -225,6 +225,7 @@ SusieSays - Instagram</string>
                             <outlet property="delegate" destination="6Xm-fI-x2H" id="gxN-5j-zGF"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Profile" id="jvy-Qv-gg9"/>
                     <connections>
                         <outlet property="aboutLBL" destination="nZc-dZ-gES" id="alx-KK-org"/>
                         <outlet property="backView" destination="bd6-KE-tln" id="ObR-J9-0VD"/>
@@ -235,7 +236,7 @@ SusieSays - Instagram</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8E-Ra-5oN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4021.5999999999999" y="-35.532233883058474"/>
+            <point key="canvasLocation" x="2604" y="3284"/>
         </scene>
         <!--Signin View Controller-->
         <scene sceneID="PK7-Fc-1jt">
@@ -261,7 +262,7 @@ SusieSays - Instagram</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lRg-ed-coJ" kind="presentation" id="hMt-cF-cfl"/>
+                                    <segue destination="lRg-ed-coJ" kind="show" id="pNU-a6-aUE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-Gs-8wy">
@@ -273,6 +274,9 @@ SusieSays - Instagram</string>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="black"/>
                                 </state>
+                                <connections>
+                                    <action selector="signinButtonTapped:" destination="yl0-Ru-UFU" eventType="touchUpInside" id="DtD-aq-7Tb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtL-JT-7Z4">
                                 <rect key="frame" x="30" y="479" width="315" height="38"/>
@@ -738,6 +742,7 @@ SusieSays - Instagram</string>
                             </tableViewSection>
                         </sections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="2Qs-4C-4P5"/>
                     <connections>
                         <outlet property="emailTextField" destination="TGH-wJ-wW2" id="fXX-UG-tNm"/>
                     </connections>
@@ -1316,6 +1321,9 @@ SusieSays - Instagram</string>
                                     <state key="normal" title="Follow">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="followButton:" destination="Dt5-YY-1NU" eventType="touchUpInside" id="WOk-4c-YaD"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1357,6 +1365,7 @@ SusieSays - Instagram</string>
                             <outlet property="delegate" destination="Dt5-YY-1NU" id="nTt-Mt-cpa"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="YhW-5z-X4V"/>
                     <connections>
                         <outlet property="backview" destination="iqd-rx-S8P" id="kgR-8R-L5F"/>
                         <outlet property="img1" destination="NST-m2-ujc" id="Fdj-H2-aLA"/>
@@ -1369,7 +1378,7 @@ SusieSays - Instagram</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOc-YX-ZHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5538" y="-36"/>
+            <point key="canvasLocation" x="3479" y="2587"/>
         </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="hyf-0O-OwR">
@@ -1614,12 +1623,13 @@ SusieSays - Instagram</string>
                         <outlet property="creditCardLBL" destination="wRm-iF-Gfa" id="283-Ri-fwP"/>
                         <outlet property="locationLBL" destination="g59-JM-oWD" id="ywa-nV-K99"/>
                         <outlet property="nameLBL" destination="f8u-ch-V2f" id="Yvt-yA-OQO"/>
+                        <outlet property="nameProfile" destination="CCH-8G-Mxp" id="yKo-ca-WD2"/>
                         <outlet property="profile" destination="qCI-zb-Tj6" id="W0w-sv-TKS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwh-e2-Ylu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3357.5999999999999" y="-34.632683658170919"/>
+            <point key="canvasLocation" x="4577" y="2587"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="qOM-MW-TwM">
@@ -2004,8 +2014,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP8-X7-imO">
                                 <rect key="frame" x="0.0" y="184" width="375" height="125"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-KH-ynH">
-                                        <rect key="frame" x="158.5" y="8" width="61" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-KH-ynH">
+                                        <rect key="frame" x="164.5" y="8" width="61" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="61" id="SOK-Ef-7zL"/>
                                         </constraints>
@@ -2022,8 +2032,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="glass-and-bottle-of-wine" translatesAutoresizingMaskIntoConstraints="NO" id="PYu-CX-DdH">
-                                        <rect key="frame" x="144" y="92" width="14" height="17"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="glass-and-bottle-of-wine" translatesAutoresizingMaskIntoConstraints="NO" id="PYu-CX-DdH">
+                                        <rect key="frame" x="150" y="92" width="14" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="Ls9-7z-US9"/>
                                             <constraint firstAttribute="width" constant="14" id="Mzc-Nq-ek0"/>
@@ -2031,8 +2041,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="pdr-QW-lf3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bva-Hh-2Mi">
-                                        <rect key="frame" x="173" y="90" width="27" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bva-Hh-2Mi">
+                                        <rect key="frame" x="179" y="90" width="27" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="5Sh-tM-jF0"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="97L-Ed-r1E"/>
@@ -2052,8 +2062,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-Ce-Mu0">
-                                        <rect key="frame" x="173" y="62" width="48" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-Ce-Mu0">
+                                        <rect key="frame" x="179" y="62" width="48" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="sxT-cf-k4z"/>
                                         </constraints>
@@ -2061,15 +2071,15 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="car.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XtJ-PQ-pEo">
-                                        <rect key="frame" x="136" y="66" width="29" height="18"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="car.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XtJ-PQ-pEo">
+                                        <rect key="frame" x="142" y="66" width="29" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.5" id="wWP-mW-pkz"/>
                                             <constraint firstAttribute="width" constant="29" id="wuV-cC-6OI"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Wifi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG3-a9-Evm">
-                                        <rect key="frame" x="171.5" y="38" width="61" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Free Wifi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG3-a9-Evm">
+                                        <rect key="frame" x="177.5" y="38" width="61" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="61" id="LnC-nk-SUW"/>
                                         </constraints>
@@ -2077,8 +2087,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fur-eL-9N5">
-                                        <rect key="frame" x="139.5" y="40" width="21.5" height="15.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fur-eL-9N5">
+                                        <rect key="frame" x="145.5" y="40" width="21.5" height="15.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="eUf-r4-4lu"/>
                                             <constraint firstAttribute="width" constant="21.5" id="ttk-Td-xul"/>
@@ -2225,6 +2235,9 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                 <state key="normal" title="BOOK THIS FOR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickOK:" destination="xdu-gF-UoD" eventType="touchUpInside" id="dXd-dW-uqu"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sQX-pN-6rw">
                                 <rect key="frame" x="3" y="313" width="206" height="136"/>
@@ -2337,9 +2350,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <viewLayoutGuide key="safeArea" id="3Kg-bz-RQD"/>
                     </view>
                     <connections>
-                        <outlet property="img1" destination="EIm-cb-deu" id="h6h-ne-nfc"/>
-                        <outlet property="img2" destination="aP4-DI-k8u" id="C4U-a6-ttv"/>
-                        <outlet property="img3" destination="Wjk-sO-DvQ" id="Ymz-vd-5wb"/>
                         <outlet property="imgHotel" destination="mV2-Yl-Cuk" id="VbQ-1r-fOc"/>
                         <outlet property="infoLBL" destination="lny-qb-1Sc" id="nz5-DE-rUf"/>
                         <outlet property="inputTextField" destination="2oC-TN-KAl" id="aFR-XY-iDt"/>
@@ -2354,130 +2364,12 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <outlet property="tab1" destination="vry-in-k15" id="rrV-eF-fvc"/>
                         <outlet property="tab2" destination="IgS-v9-Lkb" id="BxI-gy-V9T"/>
                         <outlet property="tab3" destination="LYg-0v-KrQ" id="dBo-lF-n2t"/>
+                        <segue destination="QZ3-8F-och" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="NdG-cm-kQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvB-OI-taf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="3976.4617691154426"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yyq-YC-wfw">
-            <objects>
-                <viewController id="3Q3-WV-3yi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5kk-xc-8qP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-XR-vwi">
-                                <rect key="frame" x="0.0" y="453" width="63" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="Hkz-ns-ssV"/>
-                                    <constraint firstAttribute="height" constant="24" id="YYg-46-bRs"/>
-                                    <constraint firstAttribute="width" constant="63" id="lXg-ZP-Nkb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Meo-mv-TIa">
-                                <rect key="frame" x="1" y="477" width="421" height="80"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EIm-cb-deu">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="SK6-ud-zMj"/>
-                                            <constraint firstAttribute="width" constant="135" id="j91-kF-o9L"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aP4-DI-k8u">
-                                        <rect key="frame" x="143" y="0.0" width="135" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="e8k-DT-gWe"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-sO-DvQ">
-                                        <rect key="frame" x="286" y="0.0" width="135" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="135" id="jLc-v6-mZN"/>
-                                            <constraint firstAttribute="height" constant="80" id="yFl-Lm-ST8"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="2wH-F5-8sv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="421" id="ASS-4w-iNk"/>
-                                    <constraint firstAttribute="width" constant="421" id="IJg-FN-oUe"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="XCB-z5-dEX"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Meo-mv-TIa" firstAttribute="top" secondItem="LS6-XR-vwi" secondAttribute="bottom" id="7Ue-r6-Wns"/>
-                            <constraint firstAttribute="trailing" secondItem="Meo-mv-TIa" secondAttribute="trailing" constant="-47" id="LYK-yl-I34"/>
-                            <constraint firstItem="Meo-mv-TIa" firstAttribute="top" secondItem="LS6-XR-vwi" secondAttribute="bottom" id="Rgm-0q-eOO"/>
-                            <constraint firstAttribute="trailing" secondItem="Meo-mv-TIa" secondAttribute="trailing" constant="-47" id="X5M-hc-Oan"/>
-                            <constraint firstItem="Meo-mv-TIa" firstAttribute="top" secondItem="LS6-XR-vwi" secondAttribute="bottom" id="XRg-f5-VJG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="8gW-86-Yvh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jEc-z1-iGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1666" y="3978"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="Haw-Bj-a98">
-            <objects>
-                <tableViewController id="vka-RX-a2q" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Dr-cc-aEq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="0iV-87-eTq">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="759"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        </view>
-                        <connections>
-                            <outlet property="dataSource" destination="vka-RX-a2q" id="Cb0-Kf-YY5"/>
-                            <outlet property="delegate" destination="vka-RX-a2q" id="w8C-8G-bZ5"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zdG-qD-x53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2604" y="4634.9325337331338"/>
-        </scene>
-        <!--Payment View Controller-->
-        <scene sceneID="85d-eJ-ClA">
-            <objects>
-                <viewController id="v3Q-c6-9ej" customClass="PaymentViewController" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ta8-tj-pza">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1A-kp-cJH">
-                                <rect key="frame" x="172" y="318" width="30" height="30"/>
-                                <state key="normal" title="Pay"/>
-                                <connections>
-                                    <action selector="payPresse:" destination="v3Q-c6-9ej" eventType="touchUpInside" id="GhB-To-6wc"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="pgr-58-WYl" firstAttribute="bottom" secondItem="c1A-kp-cJH" secondAttribute="bottom" constant="319" id="LyI-mc-7os"/>
-                            <constraint firstItem="pgr-58-WYl" firstAttribute="trailing" secondItem="c1A-kp-cJH" secondAttribute="trailing" constant="173" id="PWe-Y6-YyM"/>
-                            <constraint firstItem="c1A-kp-cJH" firstAttribute="top" secondItem="pgr-58-WYl" secondAttribute="top" constant="318" id="fVC-Jo-Vei"/>
-                            <constraint firstItem="c1A-kp-cJH" firstAttribute="leading" secondItem="pgr-58-WYl" secondAttribute="leading" constant="172" id="gkj-bN-cdo"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="pgr-58-WYl"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fqN-hY-thj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3311" y="3969"/>
+            <point key="canvasLocation" x="853.60000000000002" y="3966.5667166416792"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="Nta-k6-0g1">
@@ -2618,7 +2510,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <constraint firstAttribute="width" constant="646" id="XMr-ZV-SWc"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="โปรไฟล์-วงกลม" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-Z9-5HZ">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-Z9-5HZ">
                                     <rect key="frame" x="104.5" y="24" width="166" height="130"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="166" id="cZh-Mb-e5x"/>
@@ -2783,6 +2675,18 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <constraint firstAttribute="width" constant="646" id="n6e-9P-bUZ"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-mg-VfZ">
+                                    <rect key="frame" x="8" y="8" width="18" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="NG6-Vy-WZ5"/>
+                                        <constraint firstAttribute="width" constant="18" id="p7o-Ej-Ltk"/>
+                                    </constraints>
+                                    <state key="normal" image="xmark" catalog="system"/>
+                                    <connections>
+                                        <action selector="xMark:" destination="8gC-TX-Luu" eventType="touchUpInside" id="tKX-gi-4LT"/>
+                                        <action selector="xMarkButtom" destination="Dt5-YY-1NU" eventType="touchUpInside" id="cTu-sF-u9w"/>
+                                    </connections>
+                                </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-GZ-kSY">
                                     <rect key="frame" x="104.5" y="24" width="166" height="130"/>
                                     <constraints>
@@ -2930,7 +2834,6 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                             <constraints>
                                 <constraint firstItem="vhK-NJ-E4K" firstAttribute="top" secondItem="c9Z-GZ-kSY" secondAttribute="bottom" constant="21" id="02b-U1-wow"/>
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="4U8-hN-wBW" secondAttribute="trailing" constant="8" id="0SS-Eh-gBV"/>
-                                <constraint firstItem="gMr-Qs-QRe" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="125" id="6JY-x2-E9b"/>
                                 <constraint firstItem="Lx3-1y-cgd" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" id="6iP-dF-i2f"/>
                                 <constraint firstItem="wbO-bY-nTm" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="69" id="6in-1M-ZuX"/>
                                 <constraint firstItem="zCM-Fo-dsF" firstAttribute="top" secondItem="uzX-po-6Ov" secondAttribute="top" constant="8" id="Aag-fV-OmJ"/>
@@ -2939,21 +2842,26 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="zCM-Fo-dsF" secondAttribute="trailing" constant="8" id="Fc5-YX-PYT"/>
                                 <constraint firstItem="Rhd-Uc-wNh" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="8" id="Fdp-j8-YCv"/>
                                 <constraint firstItem="vhK-NJ-E4K" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="70" id="FqM-Zn-t07"/>
-                                <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="gMr-Qs-QRe" secondAttribute="trailing" constant="127" id="JPL-xl-VHd"/>
                                 <constraint firstItem="wbO-bY-nTm" firstAttribute="top" secondItem="c9Z-GZ-kSY" secondAttribute="bottom" constant="39" id="LeI-Je-B1e"/>
-                                <constraint firstItem="gMr-Qs-QRe" firstAttribute="top" secondItem="wbO-bY-nTm" secondAttribute="bottom" constant="8" id="Ml9-5K-9eC"/>
                                 <constraint firstItem="Rhd-Uc-wNh" firstAttribute="top" secondItem="4U8-hN-wBW" secondAttribute="bottom" constant="8" id="NuH-Df-gCc"/>
-                                <constraint firstItem="Lx3-1y-cgd" firstAttribute="top" secondItem="gMr-Qs-QRe" secondAttribute="bottom" constant="28" id="XRC-Es-dPG"/>
+                                <constraint firstItem="gMr-Qs-QRe" firstAttribute="top" secondItem="wbO-bY-nTm" secondAttribute="bottom" constant="8" id="Qae-10-qMq"/>
+                                <constraint firstItem="c9Z-GZ-kSY" firstAttribute="leading" secondItem="ry6-mg-VfZ" secondAttribute="trailing" constant="78.5" id="RLh-PW-VbN"/>
+                                <constraint firstItem="ry6-mg-VfZ" firstAttribute="top" secondItem="uzX-po-6Ov" secondAttribute="top" constant="8" id="Rsg-p8-8eA"/>
                                 <constraint firstItem="4U8-hN-wBW" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="8" id="Yti-BL-opi"/>
                                 <constraint firstItem="zCM-Fo-dsF" firstAttribute="leading" secondItem="c9Z-GZ-kSY" secondAttribute="trailing" constant="75.5" id="bQx-xh-EHI"/>
+                                <constraint firstItem="Lx3-1y-cgd" firstAttribute="top" secondItem="ry6-mg-VfZ" secondAttribute="bottom" constant="282" id="cKX-ug-9aZ"/>
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="wbO-bY-nTm" secondAttribute="trailing" constant="72" id="fJ8-C4-3pt"/>
+                                <constraint firstItem="ry6-mg-VfZ" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="8" id="fM8-So-y2Y"/>
                                 <constraint firstItem="4U8-hN-wBW" firstAttribute="top" secondItem="Lx3-1y-cgd" secondAttribute="bottom" constant="8" id="gFX-Yx-qpa"/>
                                 <constraint firstItem="Lx3-1y-cgd" firstAttribute="top" secondItem="zCM-Fo-dsF" secondAttribute="bottom" constant="282" id="gyw-UL-KKo"/>
                                 <constraint firstItem="SeI-8U-8Br" firstAttribute="leading" secondItem="Jnd-6B-dms" secondAttribute="leading" constant="-114" id="hF7-TM-OnU"/>
                                 <constraint firstAttribute="trailing" secondItem="SeI-8U-8Br" secondAttribute="trailing" constant="-157" id="ijo-gB-qCq"/>
+                                <constraint firstItem="Lx3-1y-cgd" firstAttribute="top" secondItem="gMr-Qs-QRe" secondAttribute="bottom" constant="28" id="j9e-e6-jLd"/>
                                 <constraint firstItem="c9Z-GZ-kSY" firstAttribute="top" secondItem="uzX-po-6Ov" secondAttribute="top" constant="24" id="k0B-sW-KNu"/>
                                 <constraint firstItem="Lx3-1y-cgd" firstAttribute="top" secondItem="SeI-8U-8Br" secondAttribute="bottom" id="ltZ-ih-o3u"/>
                                 <constraint firstItem="c9Z-GZ-kSY" firstAttribute="centerX" secondItem="uzX-po-6Ov" secondAttribute="centerX" id="mjM-fS-9Gd"/>
+                                <constraint firstItem="gMr-Qs-QRe" firstAttribute="leading" secondItem="uzX-po-6Ov" secondAttribute="leading" constant="125" id="qGp-PN-pRC"/>
+                                <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="gMr-Qs-QRe" secondAttribute="trailing" constant="127" id="tap-KE-aeN"/>
                                 <constraint firstItem="SeI-8U-8Br" firstAttribute="top" secondItem="uzX-po-6Ov" secondAttribute="top" id="yJV-U5-bni"/>
                                 <constraint firstItem="Lx3-1y-cgd" firstAttribute="trailing" secondItem="uzX-po-6Ov" secondAttribute="trailing" id="zOz-6c-Rp2"/>
                                 <constraint firstItem="uzX-po-6Ov" firstAttribute="trailing" secondItem="Rhd-Uc-wNh" secondAttribute="trailing" constant="8" id="zfa-rz-RuC"/>
@@ -2978,13 +2886,14 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <outlet property="img4" destination="1Pp-WI-sGd" id="aBa-u7-VwH"/>
                         <outlet property="nameProfile" destination="vhK-NJ-E4K" id="n33-84-0Sh"/>
                         <outlet property="profile1" destination="c9Z-GZ-kSY" id="L7c-9B-MRa"/>
+                        <segue destination="Dt5-YY-1NU" kind="show" identifier="test" id="rmt-pY-3wJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2a-my-laL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="3257"/>
+            <point key="canvasLocation" x="2604" y="3967"/>
         </scene>
-        <!--View Controller-->
+        <!--Explor-->
         <scene sceneID="2ud-rE-Q8G">
             <objects>
                 <viewController id="qci-al-RKT" customClass="ViewController" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
@@ -3039,7 +2948,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                                         <constraint firstAttribute="width" constant="80" id="bt6-7E-czA"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAM-UU-1Jn">
@@ -3049,7 +2958,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                                         <constraint firstAttribute="width" constant="62" id="fd4-Mn-OGD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwG-Am-0iE">
@@ -3062,6 +2971,15 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-qU-4eF">
+                                                    <rect key="frame" x="133" y="31" width="227" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="cvS-iU-iE3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kAM-UU-1Jn" firstAttribute="bottom" secondItem="oCt-xi-6oL" secondAttribute="bottom" id="0VL-9p-8Rj"/>
@@ -3070,6 +2988,10 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                                 <constraint firstItem="kAM-UU-1Jn" firstAttribute="top" secondItem="oCt-xi-6oL" secondAttribute="top" id="JlU-bu-xE1"/>
                                                 <constraint firstAttribute="bottom" secondItem="0Gs-dB-M3s" secondAttribute="bottom" constant="10" id="RST-Og-djE"/>
                                                 <constraint firstAttribute="trailing" secondItem="GwG-Am-0iE" secondAttribute="trailing" constant="14" id="VBT-OY-1ON"/>
+                                                <constraint firstItem="3lL-qU-4eF" firstAttribute="leading" secondItem="0Gs-dB-M3s" secondAttribute="trailing" constant="24" id="Xzc-cp-1NC"/>
+                                                <constraint firstAttribute="trailing" secondItem="3lL-qU-4eF" secondAttribute="trailing" constant="15" id="aUp-02-q71"/>
+                                                <constraint firstItem="oCt-xi-6oL" firstAttribute="top" secondItem="3lL-qU-4eF" secondAttribute="bottom" constant="5" id="cNA-dU-jYr"/>
+                                                <constraint firstItem="3lL-qU-4eF" firstAttribute="top" secondItem="UDV-HN-CcL" secondAttribute="top" constant="31" id="eK2-rn-p0M"/>
                                                 <constraint firstAttribute="bottom" secondItem="kAM-UU-1Jn" secondAttribute="bottom" constant="15" id="eKb-wa-zcs"/>
                                                 <constraint firstItem="kAM-UU-1Jn" firstAttribute="top" secondItem="e5z-MH-FEJ" secondAttribute="bottom" constant="24" id="gO4-f7-G39"/>
                                                 <constraint firstItem="GwG-Am-0iE" firstAttribute="top" secondItem="UDV-HN-CcL" secondAttribute="top" constant="12" id="igQ-Gn-ttJ"/>
@@ -3086,6 +3008,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <connections>
                                             <outlet property="categoryLbl" destination="kAM-UU-1Jn" id="hGI-qX-TwG"/>
                                             <outlet property="imgView" destination="0Gs-dB-M3s" id="UkW-FL-dfT"/>
+                                            <outlet property="locationLBL" destination="3lL-qU-4eF" id="CwO-EW-GsN"/>
                                             <outlet property="nameLbl" destination="GwG-Am-0iE" id="dnF-ZB-lzi"/>
                                         </connections>
                                     </tableViewCell>
@@ -3105,7 +3028,9 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HuX-Gh-c3D"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J6A-6T-odh"/>
+                    <navigationItem key="navigationItem" title="Explor" id="J6A-6T-odh">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bsi-9W-T9n"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="UyH-sU-BOh" id="VV5-T2-uaj"/>
                         <outlet property="table" destination="FiY-gk-G5e" id="4eD-b2-yZz"/>
@@ -3113,7 +3038,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSS-1I-EV1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789.5999999999999" y="3256.8215892053977"/>
+            <point key="canvasLocation" x="1789.5999999999999" y="3283.8080959520244"/>
         </scene>
         <!--Explor-->
         <scene sceneID="rTc-7B-bdZ">
@@ -3139,12 +3064,12 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
             <objects>
                 <navigationController id="tCl-3k-n6S" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="id6-ku-vIz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rCf-uI-oTU">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="rCf-uI-oTU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8gC-TX-Luu" kind="relationship" relationship="rootViewController" id="XYn-SJ-BkK"/>
+                        <segue destination="6Xm-fI-x2H" kind="relationship" relationship="rootViewController" id="NfV-93-YTK"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQ5-zE-b6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3173,10 +3098,10 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
             </objects>
             <point key="canvasLocation" x="4105" y="3257"/>
         </scene>
-        <!--View Controller2-->
+        <!--Home-->
         <scene sceneID="HYN-17-Lid">
             <objects>
-                <viewController id="gvk-el-NKY" customClass="ViewController2" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="gvk-el-NKY" customClass="ViewController2" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nJg-z5-Y0a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3201,32 +3126,47 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-Dl-FhV">
-                                                    <rect key="frame" x="94" y="8" width="281" height="21"/>
+                                                    <rect key="frame" x="94" y="8" width="281" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="red-5l-fPQ">
-                                                    <rect key="frame" x="94" y="54" width="281" height="21"/>
+                                                    <rect key="frame" x="94" y="53.5" width="281" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efl-nm-dtD">
+                                                    <rect key="frame" x="94" y="30" width="202" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="fru-uP-I86"/>
+                                                        <constraint firstAttribute="width" constant="187" id="sbV-0x-JME"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="kKG-c1-ts9" secondAttribute="bottom" constant="8" id="2nf-Js-QEE"/>
                                                 <constraint firstItem="n9g-Dl-FhV" firstAttribute="leading" secondItem="kKG-c1-ts9" secondAttribute="trailing" constant="16" id="3JD-9j-QXE"/>
+                                                <constraint firstAttribute="trailing" secondItem="efl-nm-dtD" secondAttribute="trailing" constant="79" id="4Jz-ZR-tN3"/>
                                                 <constraint firstItem="n9g-Dl-FhV" firstAttribute="top" secondItem="YuZ-he-gIE" secondAttribute="top" constant="8" id="4Vv-f4-cAY"/>
                                                 <constraint firstAttribute="trailing" secondItem="red-5l-fPQ" secondAttribute="trailing" id="7aF-gz-0QS"/>
                                                 <constraint firstItem="kKG-c1-ts9" firstAttribute="leading" secondItem="YuZ-he-gIE" secondAttribute="leading" constant="8" id="DSF-tc-Yl3"/>
+                                                <constraint firstItem="red-5l-fPQ" firstAttribute="top" secondItem="efl-nm-dtD" secondAttribute="bottom" constant="8.5" id="KH3-tj-UXN"/>
                                                 <constraint firstItem="red-5l-fPQ" firstAttribute="top" secondItem="n9g-Dl-FhV" secondAttribute="bottom" constant="25" id="QuT-gK-uMt"/>
                                                 <constraint firstItem="red-5l-fPQ" firstAttribute="leading" secondItem="n9g-Dl-FhV" secondAttribute="leading" id="bQ9-EY-M2a"/>
                                                 <constraint firstAttribute="trailing" secondItem="n9g-Dl-FhV" secondAttribute="trailing" id="bx7-QY-Fgc"/>
+                                                <constraint firstItem="efl-nm-dtD" firstAttribute="top" secondItem="n9g-Dl-FhV" secondAttribute="bottom" constant="1.5" id="cs1-Va-Kuj"/>
                                                 <constraint firstItem="kKG-c1-ts9" firstAttribute="top" secondItem="YuZ-he-gIE" secondAttribute="top" constant="8" id="dWv-Pc-NrB"/>
+                                                <constraint firstItem="efl-nm-dtD" firstAttribute="leading" secondItem="kKG-c1-ts9" secondAttribute="trailing" constant="16" id="iXf-Ca-Gqw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgVIew2" destination="kKG-c1-ts9" id="YyO-Au-VHD"/>
+                                            <outlet property="location" destination="efl-nm-dtD" id="kAS-Ck-REv"/>
                                             <outlet property="nameLBL2" destination="n9g-Dl-FhV" id="Vhc-PM-A0X"/>
                                             <outlet property="price" destination="red-5l-fPQ" id="Vs7-Pz-xul"/>
                                         </connections>
@@ -3241,19 +3181,19 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="v2X-uA-6cf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SIG-gq-4g2"/>
+                    <navigationItem key="navigationItem" title="Home" id="SIG-gq-4g2"/>
                     <connections>
                         <outlet property="tableView" destination="iIJ-tm-bMB" id="7Y9-9B-Qup"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHP-Lu-u7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="3256.8215892053977"/>
+            <point key="canvasLocation" x="970" y="3284"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="CmS-Oq-ePe">
             <objects>
-                <viewController id="zSh-VW-Gir" customClass="ViewController3" sceneMemberID="viewController">
+                <viewController id="zSh-VW-Gir" customClass="ViewController3" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bkg-fq-0Sv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3279,21 +3219,21 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-bB-Bz0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="235"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="235"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="gT5-bB-Bz0" firstAttribute="top" secondItem="rRC-WH-hFa" secondAttribute="top" id="P67-v4-N4q"/>
-                                            <constraint firstAttribute="trailing" secondItem="gT5-bB-Bz0" secondAttribute="trailing" id="P7q-FG-LQQ"/>
-                                            <constraint firstItem="gT5-bB-Bz0" firstAttribute="leading" secondItem="rRC-WH-hFa" secondAttribute="leading" id="Q4A-Xm-AKB"/>
-                                            <constraint firstAttribute="bottom" secondItem="gT5-bB-Bz0" secondAttribute="bottom" id="eHX-XM-F4G"/>
+                                            <constraint firstItem="gT5-bB-Bz0" firstAttribute="leading" secondItem="rRC-WH-hFa" secondAttribute="leading" id="3KV-OG-OFt"/>
+                                            <constraint firstAttribute="bottom" secondItem="gT5-bB-Bz0" secondAttribute="bottom" id="TLG-eW-A4N"/>
+                                            <constraint firstAttribute="trailing" secondItem="gT5-bB-Bz0" secondAttribute="trailing" constant="-5" id="e8S-L5-Zni"/>
+                                            <constraint firstItem="gT5-bB-Bz0" firstAttribute="top" secondItem="rRC-WH-hFa" secondAttribute="top" id="is5-W0-dRK"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="zSh-VW-Gir" id="RZH-pW-odA"/>
-                                    <outlet property="delegate" destination="zSh-VW-Gir" id="FSp-r2-SNA"/>
+                                    <outlet property="dataSource" destination="zSh-VW-Gir" id="GAt-Fr-Z82"/>
+                                    <outlet property="delegate" destination="zSh-VW-Gir" id="36s-fg-hW6"/>
                                 </connections>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gzM-gB-87M">
@@ -3312,13 +3252,486 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <viewLayoutGuide key="safeArea" id="bii-uw-iQZ"/>
                     </view>
                     <connections>
-                        <outlet property="pageView" destination="gzM-gB-87M" id="Bs1-Zn-tje"/>
-                        <outlet property="sliderCollectionView" destination="2Uc-NN-XqN" id="IXe-jw-V5S"/>
+                        <outlet property="abc" destination="2Uc-NN-XqN" id="es2-Ls-zX2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfh-Lx-bbw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="3968"/>
+            <point key="canvasLocation" x="96.799999999999997" y="3967.4662668665669"/>
+        </scene>
+        <!--Design-->
+        <scene sceneID="Bfz-bQ-DtD">
+            <objects>
+                <viewController id="PYU-Ur-2Dv" customClass="Design" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0AM-XF-7Pr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-uo-dGI" customClass="DesignableUIView" customModule="ProjectforOldman" customModuleProvider="target">
+                                <rect key="frame" x="32" y="182" width="310" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3uS-jq-1K3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mak-qk-0yC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="3966.5667166416792"/>
+        </scene>
+        <!--Search Detail View Controller-->
+        <scene sceneID="1kZ-S2-u9m">
+            <objects>
+                <viewController storyboardIdentifier="payment2" id="BX5-aH-kXB" customClass="SearchDetailViewController" customModule="ProjectforOldman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQe-VY-uvP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Shz-NG-Hq2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="3ST-FN-tgd"/>
+                                    <constraint firstAttribute="height" constant="186" id="J9N-lN-5yb"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-wX-WfD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFb-Da-cXb">
+                                        <rect key="frame" x="8" y="158" width="110" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4fI-Ko-utf">
+                                                <rect key="frame" x="0.0" y="0.0" width="22" height="20"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-dc-c5p">
+                                                <rect key="frame" x="22" y="0.0" width="22" height="20"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6p0-xU-mKT">
+                                                <rect key="frame" x="44" y="0.0" width="22" height="20"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZLY-b8-DuT">
+                                                <rect key="frame" x="66" y="0.0" width="22" height="20"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cYX-bg-3Ej">
+                                                <rect key="frame" x="88" y="0.0" width="22" height="20"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="BWS-om-hLb"/>
+                                            <constraint firstAttribute="width" constant="110" id="DTI-MY-nM0"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojh-8S-oWQ">
+                                        <rect key="frame" x="8" y="129" width="343" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="Lkm-7E-WHS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N30-J3-8pc">
+                                        <rect key="frame" x="136" y="160" width="215" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="GYr-OS-aIq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="01G-Tr-nOf"/>
+                                    <constraint firstItem="AFb-Da-cXb" firstAttribute="top" secondItem="Ojh-8S-oWQ" secondAttribute="bottom" constant="8.5" id="1KE-F9-7H4"/>
+                                    <constraint firstItem="N30-J3-8pc" firstAttribute="top" secondItem="Ojh-8S-oWQ" secondAttribute="bottom" constant="10.5" id="2eM-sm-pnH"/>
+                                    <constraint firstAttribute="bottom" secondItem="N30-J3-8pc" secondAttribute="bottom" constant="10" id="2m9-SF-FYx"/>
+                                    <constraint firstItem="Ojh-8S-oWQ" firstAttribute="leading" secondItem="Qfg-wX-WfD" secondAttribute="leading" constant="8" id="7S9-vw-g5S"/>
+                                    <constraint firstItem="Ojh-8S-oWQ" firstAttribute="top" secondItem="Qfg-wX-WfD" secondAttribute="top" constant="129" id="AuW-gL-Blc"/>
+                                    <constraint firstAttribute="height" constant="186" id="By6-gH-BXu"/>
+                                    <constraint firstAttribute="trailing" secondItem="AFb-Da-cXb" secondAttribute="trailing" constant="257" id="Ggf-bO-hop"/>
+                                    <constraint firstAttribute="trailing" secondItem="N30-J3-8pc" secondAttribute="trailing" constant="24" id="tOx-ls-afg"/>
+                                    <constraint firstItem="AFb-Da-cXb" firstAttribute="leading" secondItem="Qfg-wX-WfD" secondAttribute="leading" constant="8" id="taF-wD-ovZ"/>
+                                    <constraint firstItem="N30-J3-8pc" firstAttribute="leading" secondItem="AFb-Da-cXb" secondAttribute="trailing" constant="18" id="uUC-EE-WGG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-6A-DSX">
+                                <rect key="frame" x="0.0" y="184" width="375" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o25-rm-yvB">
+                                        <rect key="frame" x="158.5" y="8" width="61" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="PmW-OS-cU1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwa-80-1SG">
+                                        <rect key="frame" x="15" y="17" width="99.5" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99.5" id="MgI-gR-pEX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="glass-and-bottle-of-wine" translatesAutoresizingMaskIntoConstraints="NO" id="RlN-yg-4G9">
+                                        <rect key="frame" x="144" y="92" width="14" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="4qp-1q-Nfd"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Xhy-nG-ooD"/>
+                                            <constraint firstAttribute="width" constant="14" id="hkl-8E-grJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="14" id="qMJ-Js-272"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPx-DD-X6d">
+                                        <rect key="frame" x="173" y="90" width="27" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="6lN-UT-8cX"/>
+                                            <constraint firstAttribute="width" constant="27" id="G2G-AL-IpP"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="MRd-wa-a1E"/>
+                                            <constraint firstAttribute="height" constant="18" id="zbr-D2-luD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PICK A DATE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-TS-UNO">
+                                        <rect key="frame" x="10" y="64" width="111" height="34"/>
+                                        <color key="backgroundColor" red="0.41193899509999998" green="0.82476228480000002" blue="0.98530107739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="111" id="MhQ-6o-y4p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFx-aq-puv">
+                                        <rect key="frame" x="173" y="62" width="48" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="V2h-29-Nyy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="car.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7ng-Mb-BS8">
+                                        <rect key="frame" x="136" y="66" width="29" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="29" id="xM0-Mi-rBi"/>
+                                            <constraint firstAttribute="height" constant="20.5" id="zOD-w4-zOI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Wifi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckN-GX-k2P">
+                                        <rect key="frame" x="171.5" y="38" width="61" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="xXc-OQ-kXg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-mN-fxc">
+                                        <rect key="frame" x="139.5" y="40" width="21.5" height="15.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21.5" id="Thh-y7-V7y"/>
+                                            <constraint firstAttribute="height" constant="20" id="mhJ-6f-H6L"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.1073683647" alpha="0.95090432359999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ckN-GX-k2P" firstAttribute="leading" secondItem="YhK-mN-fxc" secondAttribute="trailing" constant="10.5" id="7Ku-Ei-wtc"/>
+                                    <constraint firstItem="ezm-TS-UNO" firstAttribute="top" secondItem="gwa-80-1SG" secondAttribute="bottom" constant="6" id="7Xa-BD-DK1"/>
+                                    <constraint firstItem="7ng-Mb-BS8" firstAttribute="top" secondItem="ckN-GX-k2P" secondAttribute="bottom" constant="8.5" id="9gW-HG-gCJ"/>
+                                    <constraint firstAttribute="height" constant="125" id="BJF-G0-cd6"/>
+                                    <constraint firstItem="ezm-TS-UNO" firstAttribute="top" secondItem="gwa-80-1SG" secondAttribute="bottom" constant="6" id="C8x-cu-tKU"/>
+                                    <constraint firstItem="RlN-yg-4G9" firstAttribute="top" secondItem="7ng-Mb-BS8" secondAttribute="bottom" constant="7" id="EaQ-BF-XJb"/>
+                                    <constraint firstAttribute="width" constant="375" id="HcB-O5-nz5"/>
+                                    <constraint firstAttribute="trailing" secondItem="yPx-DD-X6d" secondAttribute="trailing" constant="175" id="Ihq-wJ-fj4"/>
+                                    <constraint firstItem="yPx-DD-X6d" firstAttribute="leading" secondItem="RlN-yg-4G9" secondAttribute="trailing" constant="15" id="KEd-KD-TrO"/>
+                                    <constraint firstItem="YhK-mN-fxc" firstAttribute="leading" secondItem="gwa-80-1SG" secondAttribute="trailing" constant="25" id="Pvq-8D-mFt"/>
+                                    <constraint firstItem="YhK-mN-fxc" firstAttribute="top" secondItem="o25-rm-yvB" secondAttribute="bottom" constant="6" id="S1W-l8-EsW"/>
+                                    <constraint firstItem="yPx-DD-X6d" firstAttribute="top" secondItem="xFx-aq-puv" secondAttribute="bottom" constant="10" id="S9z-jw-OUO"/>
+                                    <constraint firstItem="RlN-yg-4G9" firstAttribute="leading" secondItem="ezm-TS-UNO" secondAttribute="trailing" constant="23" id="Smi-nc-0rj"/>
+                                    <constraint firstItem="7ng-Mb-BS8" firstAttribute="leading" secondItem="ezm-TS-UNO" secondAttribute="trailing" constant="15" id="TFH-oE-gMr"/>
+                                    <constraint firstItem="xFx-aq-puv" firstAttribute="leading" secondItem="7ng-Mb-BS8" secondAttribute="trailing" constant="8" id="TRq-En-J0B"/>
+                                    <constraint firstItem="gwa-80-1SG" firstAttribute="leading" secondItem="4cd-6A-DSX" secondAttribute="leading" constant="15" id="UnK-JF-mBc"/>
+                                    <constraint firstItem="ckN-GX-k2P" firstAttribute="top" secondItem="o25-rm-yvB" secondAttribute="bottom" constant="6" id="WS6-bk-IMD"/>
+                                    <constraint firstAttribute="bottom" secondItem="yPx-DD-X6d" secondAttribute="bottom" constant="17" id="Z2v-UV-8M7"/>
+                                    <constraint firstItem="o25-rm-yvB" firstAttribute="top" secondItem="4cd-6A-DSX" secondAttribute="top" constant="8" id="aEb-Hs-ZGJ"/>
+                                    <constraint firstItem="o25-rm-yvB" firstAttribute="leading" secondItem="gwa-80-1SG" secondAttribute="trailing" constant="44" id="eVy-ko-cVb"/>
+                                    <constraint firstItem="xFx-aq-puv" firstAttribute="top" secondItem="ckN-GX-k2P" secondAttribute="bottom" constant="6" id="jT0-Yq-yyY"/>
+                                    <constraint firstItem="ezm-TS-UNO" firstAttribute="leading" secondItem="4cd-6A-DSX" secondAttribute="leading" constant="10" id="jqN-YK-wah"/>
+                                    <constraint firstAttribute="bottom" secondItem="RlN-yg-4G9" secondAttribute="bottom" constant="16" id="oBz-vR-qli"/>
+                                    <constraint firstItem="gwa-80-1SG" firstAttribute="top" secondItem="4cd-6A-DSX" secondAttribute="top" constant="17" id="qeU-6j-Y6d"/>
+                                    <constraint firstItem="ckN-GX-k2P" firstAttribute="leading" secondItem="YhK-mN-fxc" secondAttribute="trailing" constant="10.5" id="qjT-eL-ka1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ezm-TS-UNO" secondAttribute="bottom" constant="27" id="sgA-27-iZF"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="v3g-lu-xL3">
+                                <rect key="frame" x="274" y="322" width="94" height="122"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="431-Dt-ydK">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="LWI-52-V1c"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="stepper1:" destination="BX5-aH-kXB" eventType="valueChanged" id="7wc-Ev-199"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="lWH-m1-YKb">
+                                        <rect key="frame" x="0.0" y="45" width="94" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="ReH-BY-NnR"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="stepper2:" destination="BX5-aH-kXB" eventType="valueChanged" id="XfJ-nt-3qG"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="ytz-VH-hdl">
+                                        <rect key="frame" x="0.0" y="90" width="94" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="FbK-fT-Tmd"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="stepper3:" destination="BX5-aH-kXB" eventType="valueChanged" id="Mp7-Ba-fB5"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="Xes-1u-m5a"/>
+                                    <constraint firstAttribute="height" constant="122" id="bDR-83-XJK"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tOv-dl-2Bf">
+                                <rect key="frame" x="211" y="313" width="51" height="136"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AM6-X8-77N">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKK-qE-lGo">
+                                                <rect key="frame" x="6" y="12" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.41193899509999998" green="0.82476228480000002" blue="0.98530107739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0QH-06-hNw"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="QU9-GP-NPK"/>
+                                            <constraint firstAttribute="width" constant="51" id="qDi-1I-XcX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWZ-aG-zW1">
+                                        <rect key="frame" x="0.0" y="46" width="51" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-bg-kzp">
+                                                <rect key="frame" x="7" y="10" width="37" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.41193899509999998" green="0.82476228480000002" blue="0.98530107739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="02O-gx-sJE"/>
+                                            <constraint firstAttribute="width" constant="51" id="2AK-5x-xt8"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="g7O-Gk-osV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j86-be-6QB">
+                                        <rect key="frame" x="0.0" y="92" width="51" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xB-rj-RsT">
+                                                <rect key="frame" x="7" y="10" width="37" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.41193899509999998" green="0.82476228480000002" blue="0.98530107739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="D3e-SY-mYP"/>
+                                            <constraint firstAttribute="width" constant="51" id="PNE-3m-w9l"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="chK-KV-hOx"/>
+                                            <constraint firstAttribute="height" constant="44" id="vvh-CX-JcI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="Hsy-Sw-nTz"/>
+                                    <constraint firstAttribute="width" constant="51" id="K9U-xt-qTf"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auB-RI-qBs">
+                                <rect key="frame" x="0.0" y="569" width="375" height="67"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="0G0-5M-QfO"/>
+                                    <constraint firstAttribute="width" constant="375" id="QTy-dg-uzB"/>
+                                </constraints>
+                                <state key="normal" title="BOOK THIS FOR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickOK:" destination="BX5-aH-kXB" eventType="touchUpInside" id="zbz-2t-qLi"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ddO-bu-hcU">
+                                <rect key="frame" x="3" y="313" width="206" height="136"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaU-os-O6Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many nights to stay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85E-iK-CCJ">
+                                                <rect key="frame" x="8" y="12" width="190" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X01-QE-Xh8">
+                                                <rect key="frame" x="213" y="11" width="0.0" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="0t4-A2-0Pp"/>
+                                            <constraint firstAttribute="width" constant="206" id="KCS-LW-G2T"/>
+                                            <constraint firstAttribute="height" constant="44" id="R4U-ac-Y5J"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4L-hU-7AJ">
+                                        <rect key="frame" x="0.0" y="46" width="206" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juv-mY-0kb">
+                                                <rect key="frame" x="8" y="12" width="190" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-E8-axM">
+                                                <rect key="frame" x="213" y="12" width="0.0" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="206" id="6Ne-Yh-KwE"/>
+                                            <constraint firstAttribute="height" constant="44" id="hGz-bp-kK1"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="yg7-99-eBg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJV-b3-rDd">
+                                        <rect key="frame" x="0.0" y="92" width="206" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrQ-B9-JLn">
+                                                <rect key="frame" x="8" y="12" width="190" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9M-N0-vB0">
+                                                <rect key="frame" x="213" y="12" width="0.0" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="206" id="AUn-ki-8Nv"/>
+                                            <constraint firstAttribute="height" constant="44" id="CFp-aC-cSo"/>
+                                            <constraint firstAttribute="width" constant="206" id="Nuv-wr-jpb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="1VP-ZL-7eJ"/>
+                                    <constraint firstAttribute="width" constant="206" id="yjH-Le-PHL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qfg-wX-WfD" firstAttribute="trailing" secondItem="J1W-nM-uoL" secondAttribute="trailing" id="2LU-6S-Poq"/>
+                            <constraint firstItem="ddO-bu-hcU" firstAttribute="leading" secondItem="J1W-nM-uoL" secondAttribute="leading" constant="3" id="4Kk-fT-Czi"/>
+                            <constraint firstItem="J1W-nM-uoL" firstAttribute="bottom" secondItem="auB-RI-qBs" secondAttribute="bottom" constant="31" id="6OP-ZH-Rkl"/>
+                            <constraint firstItem="Shz-NG-Hq2" firstAttribute="trailing" secondItem="J1W-nM-uoL" secondAttribute="trailing" id="7h9-d3-H1m"/>
+                            <constraint firstItem="v3g-lu-xL3" firstAttribute="top" secondItem="4cd-6A-DSX" secondAttribute="bottom" constant="13" id="AE6-xG-qjS"/>
+                            <constraint firstItem="Qfg-wX-WfD" firstAttribute="top" secondItem="J1W-nM-uoL" secondAttribute="top" id="B3V-CB-miq"/>
+                            <constraint firstItem="Shz-NG-Hq2" firstAttribute="top" secondItem="J1W-nM-uoL" secondAttribute="top" id="BqA-pM-GO8"/>
+                            <constraint firstItem="ddO-bu-hcU" firstAttribute="top" secondItem="4cd-6A-DSX" secondAttribute="bottom" constant="4" id="Cuo-G6-JLl"/>
+                            <constraint firstItem="auB-RI-qBs" firstAttribute="trailing" secondItem="J1W-nM-uoL" secondAttribute="trailing" id="Gwb-ea-STo"/>
+                            <constraint firstItem="Shz-NG-Hq2" firstAttribute="leading" secondItem="J1W-nM-uoL" secondAttribute="leading" id="JmA-Ry-mI8"/>
+                            <constraint firstItem="Qfg-wX-WfD" firstAttribute="leading" secondItem="J1W-nM-uoL" secondAttribute="leading" id="W6H-zW-iep"/>
+                            <constraint firstItem="auB-RI-qBs" firstAttribute="leading" secondItem="J1W-nM-uoL" secondAttribute="leading" id="YJb-LW-ukP"/>
+                            <constraint firstItem="J1W-nM-uoL" firstAttribute="trailing" secondItem="v3g-lu-xL3" secondAttribute="trailing" constant="7" id="YqU-Gp-vNg"/>
+                            <constraint firstItem="4cd-6A-DSX" firstAttribute="top" secondItem="J1W-nM-uoL" secondAttribute="top" constant="184" id="cmD-sX-zrS"/>
+                            <constraint firstItem="4cd-6A-DSX" firstAttribute="leading" secondItem="J1W-nM-uoL" secondAttribute="leading" id="gg3-iy-dAX"/>
+                            <constraint firstItem="v3g-lu-xL3" firstAttribute="leading" secondItem="tOv-dl-2Bf" secondAttribute="trailing" constant="12" id="gvZ-rx-8Vk"/>
+                            <constraint firstItem="4cd-6A-DSX" firstAttribute="trailing" secondItem="J1W-nM-uoL" secondAttribute="trailing" id="ngC-s5-Xs9"/>
+                            <constraint firstItem="Qfg-wX-WfD" firstAttribute="top" secondItem="J1W-nM-uoL" secondAttribute="top" id="oMd-ia-9i6"/>
+                            <constraint firstItem="tOv-dl-2Bf" firstAttribute="top" secondItem="4cd-6A-DSX" secondAttribute="bottom" constant="4" id="pu2-eL-cXP"/>
+                            <constraint firstItem="tOv-dl-2Bf" firstAttribute="leading" secondItem="ddO-bu-hcU" secondAttribute="trailing" constant="2" id="qQc-1Q-CRT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J1W-nM-uoL"/>
+                    </view>
+                    <connections>
+                        <outlet property="backViewDetail" destination="Shz-NG-Hq2" id="9RZ-2C-7Oy"/>
+                        <outlet property="inputTextField" destination="ezm-TS-UNO" id="17L-MI-zMi"/>
+                        <outlet property="label1" destination="vKK-qE-lGo" id="iZw-Vi-r2Q"/>
+                        <outlet property="label2" destination="ioE-bg-kzp" id="NQg-rp-Tx3"/>
+                        <outlet property="label3" destination="3xB-rj-RsT" id="NxL-qi-sZg"/>
+                        <outlet property="locationSearchDetail" destination="N30-J3-8pc" id="V3J-IH-r13"/>
+                        <outlet property="nameSearchDetail" destination="Ojh-8S-oWQ" id="KP8-Mk-kao"/>
+                        <outlet property="priceSearchDetail" destination="gwa-80-1SG" id="s70-YO-cMW"/>
+                        <outlet property="tab01" destination="TaU-os-O6Y" id="rE9-ns-jIG"/>
+                        <outlet property="tab02" destination="P4L-hU-7AJ" id="wwz-h6-DCI"/>
+                        <outlet property="tab03" destination="MJV-b3-rDd" id="P1A-qC-tke"/>
+                        <outlet property="tab1" destination="AM6-X8-77N" id="9gn-a7-pLe"/>
+                        <outlet property="tab2" destination="GWZ-aG-zW1" id="D0I-NH-yvl"/>
+                        <outlet property="tab3" destination="j86-be-6QB" id="a4i-BI-A3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roS-Te-fVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="3284"/>
         </scene>
     </scenes>
     <resources>
@@ -3341,8 +3754,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="star.lefthalf.fill" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
-        <image name="wifi" catalog="system" width="128" height="92"/>
         <image name="wifi" width="15" height="10"/>
+        <image name="wifi" catalog="system" width="128" height="92"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="ช้างน้อย" width="275" height="183"/>
         <image name="ดาวน์โหลด2" width="299" height="168"/>

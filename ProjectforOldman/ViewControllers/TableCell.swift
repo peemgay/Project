@@ -10,13 +10,14 @@ import UIKit
 
 class TableCell: UITableViewCell {
     @IBOutlet var imgVIew2: UIImageView!
-    
-    @IBOutlet var imgView1: UIImageView!
      @IBOutlet var nameLBL2: UILabel!
     @IBOutlet var price: UILabel!
+    @IBOutlet var location: UILabel!
+    
     
     
 
+    @IBOutlet var locationLBL: UILabel!
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var nameLbl: UILabel!
     @IBOutlet var categoryLbl: UILabel!

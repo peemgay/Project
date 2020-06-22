@@ -15,8 +15,6 @@ class MainTableViewController: UITableViewController {
     @IBOutlet weak var nameLBL: UILabel!
     @IBOutlet weak var priceLBL: UILabel!
     
-    
-    
     @IBOutlet weak var tab01: UIView!
     @IBOutlet weak var tab02: UIView!
     @IBOutlet weak var tab03: UIView!
@@ -138,8 +136,7 @@ class MainTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    
-    
+
     
     
 }

@@ -7,12 +7,12 @@
 
 import Foundation
 
-var users: [User] = [User(name: "ประยุทธ ทองดี",
+var users: [User] = [User(name: "Panuwat Fhamongkolchai",
     email: "p",
     password: "p")]
 
 var userProfile: [UserProfile] = [UserProfile(image: "profile1",
                   name: "Panuwat")]
 
-var about: [About] = [About(about: "ฉันชอบบรรยากาศดีๆ ร่มลื่นชอบว่ายน้ำในเวลาว่าง ๆ")]
+var about: [About] = [About(about: "ฉันชอบทะเล ว่ายน้ำเป็นกีฬาอดิเรก")]
 

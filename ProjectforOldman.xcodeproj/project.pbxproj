@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5877E97BCE5BEAD5410187A4 /* Pods_ProjectforOldman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B3E53CEDBDCC7814A7B061 /* Pods_ProjectforOldman.framework */; };
-		999BF493249FF10D00B19384 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BF492249FF10D00B19384 /* ViewController3.swift */; };
-		999C8D60249BD4BB00D992D7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C8D5F249BD4BB00D992D7 /* TestViewController.swift */; };
 		999C8D6C249CA83300D992D7 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C8D6B249CA83300D992D7 /* AboutTableViewController.swift */; };
 		999C8D6E249CA86700D992D7 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C8D6D249CA86700D992D7 /* GalleryTableViewController.swift */; };
 		999C8D70249E2FDE00D992D7 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999C8D6F249E2FDE00D992D7 /* SettingTableViewController.swift */; };
@@ -28,6 +26,13 @@
 		99ADC3002499C6B300B05A64 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ADC2FF2499C6B300B05A64 /* TabBarViewController.swift */; };
 		99ADC3022499CFC600B05A64 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ADC3012499CFC600B05A64 /* TabbarController.swift */; };
 		99ADC309249B611300B05A64 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ADC308249B611300B05A64 /* ProfileTableViewController.swift */; };
+		99E68F6F24A1035000A211F2 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F6E24A1035000A211F2 /* ViewController3.swift */; };
+		99E68F7324A10B8900A211F2 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F7224A10B8900A211F2 /* ExtensionViewController.swift */; };
+		99E68F7524A10BE900A211F2 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F7424A10BE900A211F2 /* ViewController4.swift */; };
+		99E68F7724A130EA00A211F2 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F7624A130EA00A211F2 /* UserProfile.swift */; };
+		99E68F7924A1310800A211F2 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F7824A1310800A211F2 /* About.swift */; };
+		99E68F7B24A1374900A211F2 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F7A24A1374900A211F2 /* SearchDetailViewController.swift */; };
+		99E68F7D24A15C9000A211F2 /* DesignableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E68F7C24A15C9000A211F2 /* DesignableUIView.swift */; };
 		99EE30AE24938650002BC45B /* DatepickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE30AD24938650002BC45B /* DatepickerViewController.swift */; };
 		99F09415247CCB3A0042C301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F09414247CCB3A0042C301 /* AppDelegate.swift */; };
 		99F09417247CCB3A0042C301 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F09416247CCB3A0042C301 /* SceneDelegate.swift */; };
@@ -60,8 +65,6 @@
 		3D91A38D6C99FBBF44E212CF /* Pods-ProjectforOldmanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectforOldmanTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectforOldmanTests/Pods-ProjectforOldmanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42D168E398B36D8FD6913B5F /* Pods_ProjectforOldmanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectforOldmanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFE6196D5329F8F3C7C69BF /* Pods-ProjectforOldman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectforOldman.release.xcconfig"; path = "Target Support Files/Pods-ProjectforOldman/Pods-ProjectforOldman.release.xcconfig"; sourceTree = "<group>"; };
-		999BF492249FF10D00B19384 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController3.swift; path = ../../../AutoScroller/AutoScroller/ViewController3.swift; sourceTree = "<group>"; };
-		999C8D5F249BD4BB00D992D7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		999C8D6B249CA83300D992D7 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		999C8D6D249CA86700D992D7 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
 		999C8D6F249E2FDE00D992D7 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +83,13 @@
 		99ADC2FF2499C6B300B05A64 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		99ADC3012499CFC600B05A64 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		99ADC308249B611300B05A64 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		99E68F6E24A1035000A211F2 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		99E68F7224A10B8900A211F2 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		99E68F7424A10BE900A211F2 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		99E68F7624A130EA00A211F2 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		99E68F7824A1310800A211F2 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		99E68F7A24A1374900A211F2 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		99E68F7C24A15C9000A211F2 /* DesignableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUIView.swift; sourceTree = "<group>"; };
 		99EE30AD24938650002BC45B /* DatepickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatepickerViewController.swift; sourceTree = "<group>"; };
 		99F09411247CCB3A0042C301 /* ProjectforOldman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectforOldman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F09414247CCB3A0042C301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				99F09441247E04100042C301 /* user.swift */,
+				99E68F7624A130EA00A211F2 /* UserProfile.swift */,
+				99E68F7824A1310800A211F2 /* About.swift */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -259,14 +271,17 @@
 				99ADC2FF2499C6B300B05A64 /* TabBarViewController.swift */,
 				99ADC3012499CFC600B05A64 /* TabbarController.swift */,
 				99ADC308249B611300B05A64 /* ProfileTableViewController.swift */,
-				999C8D5F249BD4BB00D992D7 /* TestViewController.swift */,
 				999C8D6B249CA83300D992D7 /* AboutTableViewController.swift */,
 				999C8D6D249CA86700D992D7 /* GalleryTableViewController.swift */,
 				999C8D6F249E2FDE00D992D7 /* SettingTableViewController.swift */,
 				999C9194249F24F700D992D7 /* ViewController2.swift */,
 				999C91A2249F56B200D992D7 /* MainViewController.swift */,
 				999C91A4249F75EB00D992D7 /* PaymentViewController.swift */,
-				999BF492249FF10D00B19384 /* ViewController3.swift */,
+				99E68F6E24A1035000A211F2 /* ViewController3.swift */,
+				99E68F7224A10B8900A211F2 /* ExtensionViewController.swift */,
+				99E68F7424A10BE900A211F2 /* ViewController4.swift */,
+				99E68F7A24A1374900A211F2 /* SearchDetailViewController.swift */,
+				99E68F7C24A15C9000A211F2 /* DesignableUIView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -423,27 +438,32 @@
 			files = (
 				99ADC2C22498D2C300B05A64 /* ChooseViewController.swift in Sources */,
 				99F09415247CCB3A0042C301 /* AppDelegate.swift in Sources */,
-				999C8D60249BD4BB00D992D7 /* TestViewController.swift in Sources */,
 				99ADC309249B611300B05A64 /* ProfileTableViewController.swift in Sources */,
+				99E68F7524A10BE900A211F2 /* ViewController4.swift in Sources */,
 				99F09438247E030D0042C301 /* register.swift in Sources */,
+				99E68F7724A130EA00A211F2 /* UserProfile.swift in Sources */,
 				99F0943A247E03480042C301 /* register2.swift in Sources */,
 				99F09442247E04100042C301 /* user.swift in Sources */,
 				999C91A5249F75EB00D992D7 /* PaymentViewController.swift in Sources */,
 				99EE30AE24938650002BC45B /* DatepickerViewController.swift in Sources */,
-				999BF493249FF10D00B19384 /* ViewController3.swift in Sources */,
 				99F09417247CCB3A0042C301 /* SceneDelegate.swift in Sources */,
 				999C91A3249F56B200D992D7 /* MainViewController.swift in Sources */,
+				99E68F7D24A15C9000A211F2 /* DesignableUIView.swift in Sources */,
 				99ADC2BE2498BA8400B05A64 /* MainTableViewController.swift in Sources */,
 				999C919A249F30E600D992D7 /* ForgotPasswordAPIClient.swift in Sources */,
 				999C9199249F30E600D992D7 /* ForgotPasswordAPIManager.swift in Sources */,
+				99E68F7924A1310800A211F2 /* About.swift in Sources */,
 				99ADC3002499C6B300B05A64 /* TabBarViewController.swift in Sources */,
+				99E68F6F24A1035000A211F2 /* ViewController3.swift in Sources */,
 				999C8D6C249CA83300D992D7 /* AboutTableViewController.swift in Sources */,
 				99F09448247E053C0042C301 /* SigninViewController.swift in Sources */,
 				99F09445247E044A0042C301 /* Mockdata.swift in Sources */,
+				99E68F7B24A1374900A211F2 /* SearchDetailViewController.swift in Sources */,
 				999C8D70249E2FDE00D992D7 /* SettingTableViewController.swift in Sources */,
 				99F0943D247E03800042C301 /* Signin.swift in Sources */,
 				99F0943F247E03980042C301 /* signin2.swift in Sources */,
 				99ADC3022499CFC600B05A64 /* TabbarController.swift in Sources */,
+				99E68F7324A10B8900A211F2 /* ExtensionViewController.swift in Sources */,
 				999C91A1249F39E300D992D7 /* ViewController.swift in Sources */,
 				99ADC2BC2498B94900B05A64 /* NavigationViewController.swift in Sources */,
 				999C9195249F24F700D992D7 /* ViewController2.swift in Sources */,

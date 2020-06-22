@@ -12,9 +12,9 @@ class ViewController2: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var name = ["ช้างน้อย รีสอร์ท","Novotel Hua Hin Cha Am Beach","ทอแสง ซิตี้","โฆษะ","โรงแรม อโมรา ท่าแพ เชียงใหม่","มิราเคิล แกรนด์ คอนเวนชั่น","ไอบิส กรุงเทพ ริเวอร์ไซด์","โกลเด้นทิวลิป ซอฟเฟอรีน โฮเทล","เซ็นทารา พัทยา โฮเทล","ไมด้า เดอ ซี หัวหิน","โรงแรมโกลเด้น บีช ชะอำ","ธารามันตรา ชะอำ รีสอร์ท"]
-    var price = ["1800","1900","1400","1000","1200","1300","1500","1600","1700","1900","1300","1100","1200"]
+    var price = ["$1800","$1900","$1400","$1000","$1200","$1300","$1500","$1600","$1700","$1900","$1300","$1100"]
     
-    var location = ["Pranburi","Nonthaburi","Prachoub","โฆษะ","โรงแรม อโมรา ท่าแพ เชียงใหม่","มิราเคิล แกรนด์ คอนเวนชั่น","ไอบิส กรุงเทพ ริเวอร์ไซด์","โกลเด้นทิวลิป ซอฟเฟอรีน โฮเทล","เซ็นทารา พัทยา โฮเทล","ไมด้า เดอ ซี หัวหิน","โรงแรมโกลเด้น บีช ชะอำ","ธารามันตรา ชะอำ รีสอร์ท"]
+    var location = ["Pranburi","Hua Hin","Ubon Ratchathani","Khon Kaen","Chiang Mai","Bangkok","Bangkok","Bangkok","Chonburi","Hua Hin","Hua Hin","Prachuap Khiri Khan"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,7 @@ extension ViewController2: UITableViewDelegate,UITableViewDataSource{
         cell.nameLBL2.text = name[indexPath.row]
         cell.price.text = price[indexPath.row]
         cell.imgVIew2.image = UIImage(named: name[indexPath.row])
+        cell.location.text = location[indexPath.row]
         
         return cell
     }

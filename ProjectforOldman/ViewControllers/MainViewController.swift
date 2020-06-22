@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var infoLBL: UILabel!
     @IBOutlet weak var priceLBL: UILabel!
     @IBOutlet weak var locationLBL: UILabel!
-    
+        
     @IBOutlet weak var inputTextField: UITextField!
     
     @IBOutlet weak var tab01: UIView!
@@ -28,22 +28,53 @@ class MainViewController: UIViewController {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
+
+    @IBAction func onClickOK(_ sender: Any) {
+
+        let someText1:String = """
+        เช็คอินวันที่ \(inputTextField.text!)
+        ต่อคืน \(label1.text!)
+        ผู้ใหญ่ \(label2.text!)
+        เด็ก \(label3.text!)
+        รวมยอดทั้งสิ้น \(priceLBL.text!)
+        """
+        
+        let alertController = UIAlertController(title: "กรุณาตรวจสอบข้อมูลให้ครบถ้วน", message: someText1, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Book", style: UIAlertAction.Style.default) {
+                UIAlertAction in
+            self.performSegue(withIdentifier: "home", sender: nil)
+           print("show home")
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
+                UIAlertAction in
+                print("sdf")
+            }
+        
+            // Add the actions
+            alertController.addAction(okAction)
+            alertController.addAction(cancelAction)
+        
+            // Present the controller
+        self.present(alertController, animated: true, completion: nil)
+
+    }
     
-   /* @IBOutlet weak var img1: UIImageView!
-    @IBOutlet weak var img2: UIImageView!
-    @IBOutlet weak var img3: UIImageView!*/
+    func isInt(number: Float) -> Bool {
+        return number.truncatingRemainder(dividingBy: 1.0) == 0.0
+    }
     
     @IBAction func stepper1(_ sender: UIStepper)
     {
-        label1.text = String(sender.value)
+        label1.text = Float(sender.value).clean
     }
     @IBAction func stepper2(_ sender: UIStepper)
     {
-        label2.text = String(sender.value)
+        label2.text = Float(sender.value).clean
     }
     @IBAction func stepper3(_ sender: UIStepper)
     {
-        label3.text = String(sender.value)
+        label3.text = Float(sender.value).clean
     }
     
     private var datePicker: UIDatePicker?
@@ -53,6 +84,19 @@ class MainViewController: UIViewController {
     var price = ""
     var location = ""
     
+    var imgArr = [  UIImage(named:"Alexandra Daddario"),
+                    UIImage(named:"1") ,
+                    UIImage(named:"2") ,
+                    UIImage(named:"3") ,
+                    UIImage(named:"4") ,
+                    UIImage(named:"5") ,
+                    UIImage(named:"6") ,
+                    UIImage(named:"7") ,
+                    UIImage(named:"8") ,
+                    UIImage(named:"9") ]
+    
+    var timer = Timer()
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,11 +149,7 @@ class MainViewController: UIViewController {
         inputTextField.layer.shadowOpacity = 1.0
         inputTextField.layer.shadowOffset = CGSize(width: 3, height: 3)
         inputTextField.layer.shadowColor = UIColor.green.cgColor
-        
-        /*img1.image = UIImage(named: "d2979ee4513bbabae7e98cc7b3d190d1e8b017b6")
-        img2.image = UIImage(named: "ROOMS-Superior-King_1920x10802-370x276")
-        img3.image = UIImage(named: "d2979ee4513bbabae7e98cc7b3d190d1e8b017b6")*/
-        
+    
         infoLBL.text = "\(name)"
         imgHotel.image = image
         priceLBL.text = "\(price)"
@@ -124,21 +164,28 @@ class MainViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         
         inputTextField.inputView = datePicker
-
         
     }
+    
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
     @objc func dateChanged(datePicker: UIDatePicker) {
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "MM/dd/yyyy"
+    dateFormatter.dateFormat = "dd/M/yyyy"
     inputTextField.text = dateFormatter.string(from: datePicker.date)
     view.endEditing(true)
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
-   
+}
 
+extension Float {
+    var clean: String {
+       return self.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(self)
+    }
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class SettingTableViewController: UITableViewController {
     
+    @IBOutlet var nameProfile: UILabel!
     @IBOutlet weak var profile: UIImageView!
     @IBOutlet weak var backView: UIImageView!
     @IBOutlet weak var nameLBL: UILabel!
@@ -19,10 +20,11 @@ class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profile.image = UIImage(named: "โปรไฟล์-วงกลม")
+        profile.image = UIImage(named: userProfile[0].image)
         backView.image = UIImage(named: "ดาวน์โหลด2")
         
-        nameLBL.text = "Peem"
+        nameProfile.text = "\(users[0].name)"
+        nameLBL.text = "\(users[0].name)"
         locationLBL.text = "Bankkok"
         cardBioLBL.text = "Live in Kmutt"
         creditCardLBL.text = "0931292543"
