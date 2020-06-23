@@ -16,6 +16,7 @@ class GalleryTableViewController: UITableViewController {
     @IBOutlet weak var img4: UIImageView!
     @IBOutlet weak var profile: UIImageView!
     @IBOutlet weak var backview: UIImageView!
+    @IBOutlet weak var followBotton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,13 @@ class GalleryTableViewController: UITableViewController {
         img4.image = UIImage(named: "images-1")
         profile.image = UIImage(named: userProfile[0].image)
         backview.image = UIImage(named: "ดาวน์โหลด2")
+        
+        followBotton.layer.cornerRadius = 10
+        followBotton.clipsToBounds = true
+        followBotton.layer.shadowRadius = 10
+        followBotton.layer.shadowOpacity = 1.0
+        followBotton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        followBotton.layer.shadowColor = UIColor.green.cgColor
         
     }
 

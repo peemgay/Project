@@ -11,6 +11,7 @@ import UIKit
 class AboutTableViewController: UITableViewController {
 
     
+    @IBOutlet weak var followButtom: UIButton!
     @IBOutlet weak var aboutLBL: UILabel!
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var name: UILabel!
@@ -26,6 +27,13 @@ class AboutTableViewController: UITableViewController {
         
         
         backView.image = UIImage(named: "ดาวน์โหลด2")
+        
+        followButtom.layer.cornerRadius = 10
+        followButtom.clipsToBounds = true
+        followButtom.layer.shadowRadius = 10
+        followButtom.layer.shadowOpacity = 1.0
+        followButtom.layer.shadowOffset = CGSize(width: 3, height: 3)
+        followButtom.layer.shadowColor = UIColor.green.cgColor
        
     }
 

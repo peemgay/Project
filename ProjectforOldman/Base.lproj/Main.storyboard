@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZ3-8F-och">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PYU-Ur-2Dv">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -22,23 +22,19 @@
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bd6-KE-tln">
                                     <rect key="frame" x="-114" y="0.0" width="646" height="312"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="646" id="NSw-Hu-QZn"/>
-                                        <constraint firstAttribute="height" constant="312" id="U4Z-hu-91e"/>
+                                        <constraint firstAttribute="width" constant="646" id="eql-Dx-lcj"/>
+                                        <constraint firstAttribute="height" constant="312" id="oTO-xn-51D"/>
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="sg5-KT-1xp">
-                                    <rect key="frame" x="104.5" y="24" width="166" height="130"/>
+                                    <rect key="frame" x="120" y="24" width="135" height="130"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="130" id="DHF-KP-fcE"/>
-                                        <constraint firstAttribute="width" constant="166" id="oBp-PK-kG3"/>
+                                        <constraint firstAttribute="width" constant="166" id="eot-8D-ey0"/>
+                                        <constraint firstAttribute="height" constant="130" id="htK-lp-4OX"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panuwat Fhamongkolchai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBO-Fe-DVD">
-                                    <rect key="frame" x="70" y="175" width="234" height="24"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="24" id="ODP-Qf-Anh"/>
-                                        <constraint firstAttribute="width" constant="234" id="aBl-tH-tQE"/>
-                                    </constraints>
+                                    <rect key="frame" x="70" y="175" width="222.5" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -116,6 +112,10 @@ SusieSays - Instagram</string>
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="375" id="dBV-5W-bPO"/>
+                                        <constraint firstAttribute="height" constant="45" id="gHu-HA-Zrt"/>
+                                    </constraints>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="susiewright@susiesaysblog.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-2n-Apr">
                                     <rect key="frame" x="69" y="518" width="248.5" height="20.5"/>
@@ -124,33 +124,37 @@ SusieSays - Instagram</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangkok, Thailand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgC-nJ-6RW">
-                                    <rect key="frame" x="70" y="198" width="234" height="12"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="234" id="2aT-td-4jO"/>
-                                        <constraint firstAttribute="height" constant="12" id="DjT-nn-uKD"/>
-                                    </constraints>
+                                    <rect key="frame" x="70" y="193" width="234" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF2-bv-3bh">
-                                    <rect key="frame" x="18" y="15" width="18" height="22"/>
+                                    <rect key="frame" x="18" y="15" width="23.5" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="1pG-Fc-6nW"/>
+                                        <constraint firstAttribute="width" constant="17.5" id="4Gu-61-cXm"/>
+                                    </constraints>
                                     <state key="normal" image="xmark" catalog="system"/>
                                     <connections>
                                         <action selector="xMarkButtom" destination="6Xm-fI-x2H" eventType="touchUpInside" id="1Wd-GB-3j8"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-1o-ASp">
-                                    <rect key="frame" x="330" y="15" width="21" height="22"/>
+                                    <rect key="frame" x="330.5" y="15" width="22" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="CVl-WM-aqp"/>
+                                        <constraint firstAttribute="width" constant="22" id="GyJ-r5-Kq7"/>
+                                    </constraints>
                                     <state key="normal" image="gear" catalog="system"/>
                                     <connections>
                                         <action selector="settingClick:" destination="6Xm-fI-x2H" eventType="touchUpInside" id="uIs-az-ofQ"/>
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-dZ-gES">
-                                    <rect key="frame" x="36" y="388" width="315" height="26"/>
+                                    <rect key="frame" x="36" y="393.5" width="315" height="20.5"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="26" id="7wb-dM-AD1"/>
+                                        <constraint firstAttribute="width" constant="315" id="0LK-MH-5nV"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -177,45 +181,42 @@ SusieSays - Instagram</string>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="4eZ-LP-h3n" secondAttribute="bottom" constant="35" id="05j-Bj-0NK"/>
-                                <constraint firstItem="ktP-1o-ASp" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="15" id="1lU-Pu-hSE"/>
-                                <constraint firstItem="4eZ-LP-h3n" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="126" id="3iJ-an-aRY"/>
-                                <constraint firstItem="iRn-or-etd" firstAttribute="trailing" secondItem="feo-bx-vk4" secondAttribute="trailing" id="4hN-8z-Zeq"/>
+                                <constraint firstItem="fBO-Fe-DVD" firstAttribute="top" secondItem="sg5-KT-1xp" secondAttribute="bottom" constant="21" id="1AR-YF-ccc"/>
+                                <constraint firstItem="ktP-1o-ASp" firstAttribute="leading" secondItem="sg5-KT-1xp" secondAttribute="trailing" constant="75.5" id="4LJ-4N-PZG"/>
                                 <constraint firstItem="OX3-NY-njE" firstAttribute="top" secondItem="nZc-dZ-gES" secondAttribute="bottom" constant="8" id="8Gp-Z9-aBc"/>
                                 <constraint firstItem="KF2-bv-3bh" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="15" id="9WN-kZ-Ghz"/>
+                                <constraint firstItem="bd6-KE-tln" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" id="Bqs-Bl-IvS"/>
                                 <constraint firstItem="VQi-WJ-OHi" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="29" id="CEg-9H-TMR"/>
+                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="bd6-KE-tln" secondAttribute="bottom" id="D28-lA-YuH"/>
                                 <constraint firstItem="GgC-nJ-6RW" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="70" id="D6i-Lm-utG"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="bottom" secondItem="VQi-WJ-OHi" secondAttribute="bottom" constant="381.5" id="DLT-gK-WAH"/>
-                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="fBO-Fe-DVD" secondAttribute="trailing" constant="71" id="Dl7-hA-6ec"/>
-                                <constraint firstItem="GgC-nJ-6RW" firstAttribute="top" secondItem="sg5-KT-1xp" secondAttribute="bottom" constant="44" id="E9v-CK-Bjm"/>
-                                <constraint firstItem="4eZ-LP-h3n" firstAttribute="top" secondItem="GgC-nJ-6RW" secondAttribute="bottom" constant="8" id="Ff1-fR-SYk"/>
-                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="ktP-1o-ASp" secondAttribute="bottom" constant="275" id="Gz3-vO-WFN"/>
+                                <constraint firstItem="GgC-nJ-6RW" firstAttribute="top" secondItem="sg5-KT-1xp" secondAttribute="bottom" constant="39" id="FDZ-Zb-r4Y"/>
+                                <constraint firstItem="sg5-KT-1xp" firstAttribute="centerX" secondItem="feo-bx-vk4" secondAttribute="centerX" id="FII-wy-OKE"/>
                                 <constraint firstItem="zeo-Qt-9Q6" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="29" id="ITv-tr-2Ti"/>
-                                <constraint firstItem="iRn-or-etd" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" id="IjR-ov-GGX"/>
-                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="ktP-1o-ASp" secondAttribute="trailing" constant="24" id="J89-EK-dwb"/>
+                                <constraint firstItem="ktP-1o-ASp" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="15" id="Jgo-YA-A2j"/>
+                                <constraint firstItem="sg5-KT-1xp" firstAttribute="leading" secondItem="KF2-bv-3bh" secondAttribute="trailing" constant="78.5" id="LST-R0-V1j"/>
                                 <constraint firstItem="zeo-Qt-9Q6" firstAttribute="top" secondItem="nZc-dZ-gES" secondAttribute="bottom" constant="31" id="MM4-vT-Nfh"/>
-                                <constraint firstItem="nZc-dZ-gES" firstAttribute="top" secondItem="iRn-or-etd" secondAttribute="bottom" constant="31" id="NCg-Yb-5PP"/>
+                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="ktP-1o-ASp" secondAttribute="trailing" constant="22.5" id="N4L-lg-Dpu"/>
+                                <constraint firstItem="4eZ-LP-h3n" firstAttribute="top" secondItem="GgC-nJ-6RW" secondAttribute="bottom" constant="8" id="NTx-VF-kId"/>
+                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="4eZ-LP-h3n" secondAttribute="bottom" constant="35" id="NX0-nh-mcZ"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="nZc-dZ-gES" secondAttribute="trailing" constant="24" id="PDo-j3-ywo"/>
                                 <constraint firstItem="OX3-NY-njE" firstAttribute="leading" secondItem="zeo-Qt-9Q6" secondAttribute="trailing" constant="18" id="PH1-zn-GDp"/>
-                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="bd6-KE-tln" secondAttribute="bottom" id="Pmz-vZ-csR"/>
-                                <constraint firstItem="sg5-KT-1xp" firstAttribute="centerX" secondItem="feo-bx-vk4" secondAttribute="centerX" id="SoV-5i-zvX"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="OX3-NY-njE" secondAttribute="trailing" constant="105" id="V9l-nc-Odz"/>
                                 <constraint firstItem="VQi-WJ-OHi" firstAttribute="top" secondItem="zeo-Qt-9Q6" secondAttribute="bottom" constant="51" id="VVx-fh-fnQ"/>
-                                <constraint firstItem="bd6-KE-tln" firstAttribute="leading" secondItem="MaQ-rN-ZuL" secondAttribute="leading" constant="-114" id="XU6-p4-L3x"/>
-                                <constraint firstItem="fBO-Fe-DVD" firstAttribute="top" secondItem="sg5-KT-1xp" secondAttribute="bottom" constant="21" id="Y8z-VG-6RO"/>
+                                <constraint firstItem="fBO-Fe-DVD" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="70" id="Vj3-8C-A3h"/>
+                                <constraint firstItem="iRn-or-etd" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" id="a2o-16-i27"/>
+                                <constraint firstItem="nZc-dZ-gES" firstAttribute="top" secondItem="4eZ-LP-h3n" secondAttribute="bottom" constant="116.5" id="bVG-FV-CCL"/>
                                 <constraint firstItem="U7y-2n-Apr" firstAttribute="leading" secondItem="VQi-WJ-OHi" secondAttribute="trailing" constant="17.5" id="cGi-65-Axz"/>
                                 <constraint firstItem="U7y-2n-Apr" firstAttribute="top" secondItem="OX3-NY-njE" secondAttribute="bottom" constant="15" id="dDk-mr-8xt"/>
-                                <constraint firstItem="sg5-KT-1xp" firstAttribute="leading" secondItem="KF2-bv-3bh" secondAttribute="trailing" constant="68.5" id="eU7-cW-E3j"/>
-                                <constraint firstItem="fBO-Fe-DVD" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="70" id="joB-U5-xFC"/>
-                                <constraint firstItem="iRn-or-etd" firstAttribute="top" secondItem="KF2-bv-3bh" secondAttribute="bottom" constant="275" id="mJF-ZC-ozA"/>
+                                <constraint firstItem="sg5-KT-1xp" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="24" id="gy5-tc-H3Y"/>
+                                <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="fBO-Fe-DVD" secondAttribute="trailing" constant="82.5" id="j6X-U1-edr"/>
+                                <constraint firstItem="bd6-KE-tln" firstAttribute="leading" secondItem="MaQ-rN-ZuL" secondAttribute="leading" constant="-114" id="lQw-H7-gN9"/>
                                 <constraint firstItem="nZc-dZ-gES" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="36" id="pKA-Pq-PUC"/>
-                                <constraint firstAttribute="trailing" secondItem="bd6-KE-tln" secondAttribute="trailing" constant="-157" id="qO7-JB-nZJ"/>
-                                <constraint firstItem="ktP-1o-ASp" firstAttribute="leading" secondItem="sg5-KT-1xp" secondAttribute="trailing" constant="59.5" id="rCD-zw-TAY"/>
-                                <constraint firstItem="sg5-KT-1xp" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" constant="24" id="taI-aj-IX8"/>
+                                <constraint firstItem="iRn-or-etd" firstAttribute="trailing" secondItem="feo-bx-vk4" secondAttribute="trailing" id="rYw-Xo-vLT"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="4eZ-LP-h3n" secondAttribute="trailing" constant="126" id="tfk-gT-n3m"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="U7y-2n-Apr" secondAttribute="trailing" constant="57.5" id="wk0-Iz-4V5"/>
                                 <constraint firstItem="feo-bx-vk4" firstAttribute="trailing" secondItem="GgC-nJ-6RW" secondAttribute="trailing" constant="71" id="xH8-S3-Ciy"/>
-                                <constraint firstItem="bd6-KE-tln" firstAttribute="top" secondItem="feo-bx-vk4" secondAttribute="top" id="zgO-7H-brH"/>
+                                <constraint firstAttribute="trailing" secondItem="bd6-KE-tln" secondAttribute="trailing" constant="-157" id="yGs-Md-08c"/>
                                 <constraint firstItem="KF2-bv-3bh" firstAttribute="leading" secondItem="feo-bx-vk4" secondAttribute="leading" constant="18" id="zpg-eK-frq"/>
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="feo-bx-vk4"/>
@@ -230,6 +231,7 @@ SusieSays - Instagram</string>
                         <outlet property="aboutLBL" destination="nZc-dZ-gES" id="alx-KK-org"/>
                         <outlet property="backView" destination="bd6-KE-tln" id="ObR-J9-0VD"/>
                         <outlet property="email" destination="U7y-2n-Apr" id="h1a-8y-DNg"/>
+                        <outlet property="followButtom" destination="4eZ-LP-h3n" id="TSF-RE-BGQ"/>
                         <outlet property="name" destination="fBO-Fe-DVD" id="Ape-QG-y2f"/>
                         <outlet property="profile" destination="sg5-KT-1xp" id="bod-bc-VQg"/>
                     </connections>
@@ -1368,6 +1370,7 @@ SusieSays - Instagram</string>
                     <navigationItem key="navigationItem" id="YhW-5z-X4V"/>
                     <connections>
                         <outlet property="backview" destination="iqd-rx-S8P" id="kgR-8R-L5F"/>
+                        <outlet property="followBotton" destination="JzO-dL-D6H" id="Qog-e7-7bA"/>
                         <outlet property="img1" destination="NST-m2-ujc" id="Fdj-H2-aLA"/>
                         <outlet property="img2" destination="MoX-j4-qiC" id="toA-hR-jNV"/>
                         <outlet property="img3" destination="GOg-bG-1f0" id="doT-Mr-blL"/>
@@ -1470,6 +1473,9 @@ SusieSays - Instagram</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="mcm-gU-5Lq"/>
+                                    </constraints>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="JwP-Li-VAa">
                                     <rect key="frame" x="18" y="351" width="333" height="21"/>
@@ -1562,6 +1568,10 @@ SusieSays - Instagram</string>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y4-96-qrc">
                                     <rect key="frame" x="0.0" y="218" width="375" height="45"/>
                                     <color key="backgroundColor" red="0.41193899509999998" green="0.82476228480000002" blue="0.98530107739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="375" id="FCg-Ck-WSe"/>
+                                        <constraint firstAttribute="height" constant="45" id="syw-SE-iHZ"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -1574,13 +1584,14 @@ SusieSays - Instagram</string>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="mXI-RG-sdM" secondAttribute="trailing" constant="164" id="1Hq-Sr-q8G"/>
                                 <constraint firstItem="JwP-Li-VAa" firstAttribute="top" secondItem="Es5-6n-3iI" secondAttribute="bottom" constant="30" id="5r6-dH-MD0"/>
                                 <constraint firstItem="CCH-8G-Mxp" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="70" id="9rr-ge-dlg"/>
-                                <constraint firstItem="6y4-96-qrc" firstAttribute="top" secondItem="ZBC-5M-OxN" secondAttribute="bottom" constant="8" id="AaG-bB-5rh"/>
                                 <constraint firstItem="JwP-Li-VAa" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="18" id="Bcs-xN-ye2"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="ZBC-5M-OxN" secondAttribute="trailing" constant="71" id="Cj8-Xd-4Vk"/>
                                 <constraint firstItem="V7f-2Y-iuf" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="18" id="EPE-JB-X02"/>
+                                <constraint firstItem="6y4-96-qrc" firstAttribute="top" secondItem="ZBC-5M-OxN" secondAttribute="bottom" constant="8" id="FSi-dH-A9z"/>
                                 <constraint firstItem="ZBC-5M-OxN" firstAttribute="top" secondItem="qCI-zb-Tj6" secondAttribute="bottom" constant="44" id="FUv-7o-9uG"/>
+                                <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="Es5-6n-3iI" secondAttribute="trailing" constant="24" id="He1-qQ-x0G"/>
                                 <constraint firstItem="UmJ-3Q-ghI" firstAttribute="top" secondItem="ddM-JS-u72" secondAttribute="bottom" constant="8" id="KGB-UM-aoq"/>
-                                <constraint firstItem="fpA-Zr-moS" firstAttribute="bottom" secondItem="6y4-96-qrc" secondAttribute="bottom" constant="657" id="Kym-0X-ViI"/>
+                                <constraint firstItem="Es5-6n-3iI" firstAttribute="top" secondItem="UmJ-3Q-ghI" secondAttribute="bottom" constant="8.5" id="LJG-of-rVN"/>
                                 <constraint firstItem="ddM-JS-u72" firstAttribute="top" secondItem="fpA-Zr-moS" secondAttribute="top" id="NeR-aY-RJO"/>
                                 <constraint firstItem="fI2-Yr-5LN" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="18" id="Pga-Af-afx"/>
                                 <constraint firstItem="V7f-2Y-iuf" firstAttribute="top" secondItem="urR-eK-ZYd" secondAttribute="bottom" constant="8" id="S3v-Iv-F6Z"/>
@@ -1592,7 +1603,9 @@ SusieSays - Instagram</string>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="JwP-Li-VAa" secondAttribute="trailing" constant="24" id="Yht-aI-3kM"/>
                                 <constraint firstItem="qCI-zb-Tj6" firstAttribute="top" secondItem="fpA-Zr-moS" secondAttribute="top" constant="24" id="Z9P-Jq-F54"/>
                                 <constraint firstItem="mXI-RG-sdM" firstAttribute="top" secondItem="V7f-2Y-iuf" secondAttribute="bottom" constant="34.5" id="a6s-YX-Iv4"/>
+                                <constraint firstItem="6y4-96-qrc" firstAttribute="trailing" secondItem="fpA-Zr-moS" secondAttribute="trailing" id="ab7-6A-2TG"/>
                                 <constraint firstItem="urR-eK-ZYd" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="18" id="acb-zb-vdA"/>
+                                <constraint firstItem="Es5-6n-3iI" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="18" id="dZf-o5-xiY"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="urR-eK-ZYd" secondAttribute="trailing" constant="314" id="dac-bA-CSt"/>
                                 <constraint firstItem="CCH-8G-Mxp" firstAttribute="top" secondItem="qCI-zb-Tj6" secondAttribute="bottom" constant="21" id="eBg-mC-B72"/>
                                 <constraint firstItem="fI2-Yr-5LN" firstAttribute="top" secondItem="JwP-Li-VAa" secondAttribute="bottom" constant="42" id="fnP-Cq-gmi"/>
@@ -1600,12 +1613,11 @@ SusieSays - Instagram</string>
                                 <constraint firstItem="mXI-RG-sdM" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="163" id="kAR-dj-1Zd"/>
                                 <constraint firstItem="Es5-6n-3iI" firstAttribute="top" secondItem="UmJ-3Q-ghI" secondAttribute="bottom" constant="8.5" id="kle-H0-tqI"/>
                                 <constraint firstItem="Es5-6n-3iI" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" constant="18" id="lUA-FX-htX"/>
-                                <constraint firstItem="6y4-96-qrc" firstAttribute="trailing" secondItem="fpA-Zr-moS" secondAttribute="trailing" id="moJ-n0-IYp"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="fI2-Yr-5LN" secondAttribute="trailing" constant="24" id="neU-7c-qQa"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="UmJ-3Q-ghI" secondAttribute="trailing" constant="210" id="qdz-Zo-Mxy"/>
                                 <constraint firstItem="ddM-JS-u72" firstAttribute="leading" secondItem="b5z-Vl-SdR" secondAttribute="leading" constant="-114" id="rOz-DB-Yh3"/>
-                                <constraint firstItem="6y4-96-qrc" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" id="s13-QQ-7m1"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="V7f-2Y-iuf" secondAttribute="trailing" constant="24" id="tVK-PI-dx6"/>
+                                <constraint firstItem="6y4-96-qrc" firstAttribute="leading" secondItem="fpA-Zr-moS" secondAttribute="leading" id="yKa-p0-JfJ"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="Es5-6n-3iI" secondAttribute="trailing" constant="24" id="yPg-fz-eap"/>
                                 <constraint firstItem="fpA-Zr-moS" firstAttribute="trailing" secondItem="CCH-8G-Mxp" secondAttribute="trailing" constant="71" id="ytj-M9-Ie7"/>
                             </constraints>
@@ -1629,7 +1641,7 @@ SusieSays - Instagram</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwh-e2-Ylu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4577" y="2587"/>
+            <point key="canvasLocation" x="4576.8000000000002" y="2586.6566716641682"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="qOM-MW-TwM">
@@ -2828,6 +2840,9 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                     <state key="normal" title="Follow">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="follow:" destination="8gC-TX-Luu" eventType="touchUpInside" id="0n6-1d-0Dg"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2879,6 +2894,7 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                         <outlet property="backView" destination="Lx3-1y-cgd" id="5GM-Ye-riq"/>
                         <outlet property="backview" destination="SeI-8U-8Br" id="sz6-a2-6TF"/>
                         <outlet property="favouritesButton" destination="U4d-BE-fu4" id="IV4-Mm-IVf"/>
+                        <outlet property="followButton" destination="gMr-Qs-QRe" id="eID-Us-j4U"/>
                         <outlet property="galleryButton" destination="CPH-fD-9Ed" id="pha-70-dCS"/>
                         <outlet property="img1" destination="rzd-Pj-jMp" id="0K3-eg-p2K"/>
                         <outlet property="img2" destination="uwD-h6-bRg" id="PLV-8F-zaN"/>
@@ -3259,10 +3275,10 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="3967.4662668665669"/>
         </scene>
-        <!--Design-->
+        <!--View Controller-->
         <scene sceneID="Bfz-bQ-DtD">
             <objects>
-                <viewController id="PYU-Ur-2Dv" customClass="Design" sceneMemberID="viewController">
+                <viewController id="PYU-Ur-2Dv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0AM-XF-7Pr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3288,6 +3304,11 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ors-aY-idY" customClass="DesignableUIView" customModule="ProjectforOldman" customModuleProvider="target">
+                                <rect key="frame" x="67" y="46" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3754,8 +3775,8 @@ Novotel Hua Hin Cha Am Beach Resort and Spa ได้เลย ระหว่�
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="star.lefthalf.fill" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
-        <image name="wifi" width="15" height="10"/>
         <image name="wifi" catalog="system" width="128" height="92"/>
+        <image name="wifi" width="15" height="10"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="ช้างน้อย" width="275" height="183"/>
         <image name="ดาวน์โหลด2" width="299" height="168"/>

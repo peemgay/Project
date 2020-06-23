@@ -21,6 +21,8 @@ class ProfileTableViewController: UITableViewController {
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var backview: UIImageView!
     
+    @IBOutlet weak var followButton: UIButton!
+    
     //var userProfiles: [UserProfile] = [userProfile(im)]
     
     override func viewDidLoad() {
@@ -29,12 +31,18 @@ class ProfileTableViewController: UITableViewController {
         profile1.image = UIImage(named: userProfile[0].image)
         nameProfile.text = "\(users[0].name)"
         
-        
         img1.image = UIImage(named: "3")
         img2.image = UIImage(named: "4")
         img3.image = UIImage(named: "5")
         img4.image = UIImage(named: "2")
         backview.image = UIImage(named: "ดาวน์โหลด2")
+        
+        followButton.layer.cornerRadius = 10
+        followButton.clipsToBounds = true
+        followButton.layer.shadowRadius = 10
+        followButton.layer.shadowOpacity = 1.0
+        followButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        followButton.layer.shadowColor = UIColor.green.cgColor
     }
     
     
